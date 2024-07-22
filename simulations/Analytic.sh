@@ -12,12 +12,14 @@
 #SBATCH --error=EEG_1_CoordsV.err
 #SBATCH --exclusive
 #SBATCH --mem=0
-#SBATCH --array=0-2
+#SBATCH --array=0
 
-spack env activate bluerecording-dev
-source ~/bluerecording-dev/bin/activate
+module purge
+module load archive/2022-02 py-mpi4py
 
-filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic'
+source ~/probevenv/bin/activate
+
+filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_senn'
 
 echo $SLURM_ARRAY_TASK_ID
 
@@ -65,7 +67,7 @@ fi
 
 wait
 
-srun -n 39 python analytic-Standoff-sideways-highConductivity.py $filename $SLURM_ARRAY_TASK_ID
+srun -n 39 python analytic-Standoff-senn.py $filename $SLURM_ARRAY_TASK_ID
 wait
 srun -n 4 python combineOldMethod.py $filename $SLURM_ARRAY_TASK_ID
 

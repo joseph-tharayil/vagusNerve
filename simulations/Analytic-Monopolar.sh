@@ -19,7 +19,7 @@ module load archive/2022-02 py-mpi4py
 
 source ~/probevenv/bin/activate
 
-filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_monopolar'
+filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_monopolar'
 
 echo $SLURM_ARRAY_TASK_ID
 

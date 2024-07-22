@@ -1,0 +1,1122 @@
+Autoloading python/3.9.7
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading python/3.9.7
+Autoloading hpe-mpi/2.25.hmpt
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/0/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/scaling_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/1/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/scaling_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/meff/0/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment/recruitment_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters/scaling_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/scaling_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/scaling_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis/31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/1/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/uaff/0/signals_0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist26.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs19.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs35.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers37.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers24.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist1.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist16.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist38.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers22.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers27.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist14.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers12.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers18.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers32.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs15.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist3.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist5.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist21.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs30.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs10.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist34.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers6.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs33.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist23.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers7.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist36.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs4.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist13.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs11.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs28.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers8.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs17.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs29.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist25.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probDist9.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs0.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers2.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers20.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/probs31.npy’: No such file or directory
+rm: cannot remove ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles/fibers13.npy’: No such file or directory
+mkdir: mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward’cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward’: File exists
+: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/diameters’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/fascicles’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/recruitment’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/phis’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/0’: File exists
+mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/maff/1’: File exists
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_19.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_36.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_9.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_34.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_31.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_0.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_2.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_38.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_22.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    file_ctx = open(file, "wb")
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_23.npy'
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_14.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_3.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_28.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_20.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_4.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_16.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_1.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_7.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_32.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_12.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_37.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_26.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_6.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_8.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_30.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_15.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_29.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_13.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_10.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_11.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_25.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_27.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_21.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_33.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_5.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_17.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_35.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_18.npy'
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 779, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/analytic-Standoff-highConductivity.py", line 770, in main
+    np.save(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy',signals[typeIdx])
+  File "<__array_function__ internals>", line 200, in save
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 518, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_24.npy'
+srun: error: r5i0n34: task 19: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=2037921.0
+slurmstepd: error: *** STEP 2037921.0 ON r2i2n4 CANCELLED AT 2024-02-16T10:44:11 ***
+srun: error: r5i0n30: task 15: Exited with exit code 1
+srun: error: r5i1n20: task 23: Exited with exit code 1
+srun: error: r5i0n28: task 13: Exited with exit code 1
+srun: error: r5i0n18: task 3: Exited with exit code 1
+srun: error: r5i0n24: task 9: Exited with exit code 1
+srun: error: r5i1n19: task 22: Exited with exit code 1
+srun: error: r5i0n20: task 5: Exited with exit code 1
+srun: error: r5i0n35: task 20: Exited with exit code 1
+srun: error: r5i1n25: task 28: Exited with exit code 1
+srun: error: r5i1n21: task 24: Exited with exit code 1
+srun: error: r5i1n22: task 25: Exited with exit code 1
+srun: error: r5i0n32: task 17: Exited with exit code 1
+srun: error: r5i0n26: task 11: Exited with exit code 1
+srun: error: r5i1n26: task 29: Exited with exit code 1
+srun: error: r5i0n31: task 16: Exited with exit code 1
+srun: error: r5i1n28: task 31: Exited with exit code 1
+srun: error: r5i1n30: task 33: Exited with exit code 1
+srun: error: r5i1n18: task 21: Exited with exit code 1
+srun: error: r5i1n31: task 34: Exited with exit code 1
+srun: error: r5i0n22: task 7: Exited with exit code 1
+srun: error: r5i0n19: task 4: Exited with exit code 1
+srun: error: r5i0n25: task 10: Exited with exit code 1
+srun: error: r5i1n24: task 27: Exited with exit code 1
+srun: error: r5i1n35: task 38: Exited with exit code 1
+srun: error: r5i1n34: task 37: Exited with exit code 1
+srun: error: r5i1n29: task 32: Exited with exit code 1
+srun: error: r5i0n33: task 18: Exited with exit code 1
+srun: error: r5i1n32: task 35: Exited with exit code 1
+srun: error: r5i1n23: task 26: Exited with exit code 1
+srun: error: r2i2n6: task 2: Exited with exit code 1
+srun: error: r5i1n33: task 36: Exited with exit code 1
+srun: error: r5i1n27: task 30: Exited with exit code 1
+srun: error: r5i0n27: task 12: Exited with exit code 1
+srun: error: r5i0n23: task 8: Exited with exit code 1
+srun: error: r5i0n21: task 6: Exited with exit code 1
+srun: error: r2i2n5: task 1: Exited with exit code 1
+srun: error: r2i2n4: task 0: Exited with exit code 1
+srun: error: r5i0n29: task 14: Exited with exit code 1
+srun: Warning: can't run 4 processes on 39 nodes, setting nnodes to 4
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/combineOldMethod.py", line 29, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusNerve/vagusNerveCode/analyticMethod/squareTerm/combineOldMethod.py", line 19, in main
+    signals[typeIdx] += np.load(outputfolder+'/'+str(iteration)+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy')
+  File "/gpfs/bbp.cscs.ch/home/tharayil/probevenv/lib/python3.9/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward/0/ueff/1/signals_0.npy'
+srun: error: r5i0n18: task 3: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=2037921.1
+srun: Warning: can't run 4 processes on 39 nodes, setting nnodes to 4

@@ -19,7 +19,7 @@ module load archive/2022-02 py-mpi4py
 
 source ~/probevenv/bin/activate
 
-filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_downward'
+filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Analytic_allActive_squareTerm_downward'
 
 rm -r $filename
 mkdir $filename
@@ -39,7 +39,7 @@ cp -r $filename/0/maff $filename/0/meff
 cp -r $filename/0/maff $filename/0/uaff
 cp -r $filename/0/maff $filename/0/ueff
 
-srun -n 39 python analytic-Standoff-downwards-highConductivity.py $filename $SLURM_ARRAY_TASK_ID
+srun -n 39 python analytic-Standoff-highConductivity.py $filename $SLURM_ARRAY_TASK_ID
 wait
 srun -n 4 python combineOldMethod.py $filename $SLURM_ARRAY_TASK_ID
 
