@@ -16,3 +16,4 @@ Requires-Dist: ipympl
 Requires-Dist: mpi4py
 Requires-Dist: quantities
 Requires-Dist: openpyxl
+Requires-Dist: pytest

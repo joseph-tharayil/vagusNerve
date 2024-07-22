@@ -1,4 +1,5 @@
 setup.py
+tests/test_SFAP.py
 vagusNerve/nerveSetup.py
 vagusNerve/phiShape.py
 vagusNerve/phiWeight.py

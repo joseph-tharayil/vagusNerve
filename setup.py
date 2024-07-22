@@ -20,6 +20,7 @@ setup(
     'ipympl',
     'mpi4py',
     'quantities',
-    'openpyxl'
+    'openpyxl',
+    'pytest'
     ]
    )
