@@ -1,0 +1,32 @@
+Auks API request failed : krb5 cred : unable to read credential cache
+srun: Warning: can't run 4 processes on 39 nodes, setting nnodes to 4
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+srun: error: r3i0n1: task 1: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=2334774.1
+srun: error: r3i0n2: task 2: Exited with exit code 2
+srun: error: r3i0n0: task 0: Exited with exit code 2
+srun: error: r3i0n3: task 3: Exited with exit code 2
+srun: Warning: can't run 4 processes on 39 nodes, setting nnodes to 4
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+srun: error: r2i0n0: task 3: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=2334776.1
+srun: error: r1i7n19: task 0: Exited with exit code 2
+srun: error: r1i7n28: task 1: Exited with exit code 2
+srun: error: r1i7n35: task 2: Exited with exit code 2
+srun: Warning: can't run 4 processes on 39 nodes, setting nnodes to 4
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/bin/python: can't open file '/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py': [Errno 2] No such file or directory
+srun: error: r1i4n3: task 3: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=2334775.1
+slurmstepd: error: *** STEP 2334775.1 ON r1i4n0 CANCELLED AT 2024-07-22T16:31:27 ***
+srun: error: r1i4n2: task 2: Exited with exit code 2
+srun: error: r1i4n1: task 1: Exited with exit code 2
+srun: error: r1i4n0: task 0: Exited with exit code 2

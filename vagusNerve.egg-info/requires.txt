@@ -1,0 +1,11 @@
+scikit-learn
+scipy
+numpy
+pandas
+notebook
+ipython
+matplotlib
+ipympl
+mpi4py
+quantities
+openpyxl
