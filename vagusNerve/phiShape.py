@@ -34,10 +34,12 @@ def editPhiShape(phi,distance):
     ''' 
     This function takes the recording exposure curve from S4L, shifts it to match the desired distance from stimulus to recording, and smooths it
     '''
-    
-    xvals = phi.iloc[:,0].values+distance -phi.iloc[np.argmax(phi.iloc[:,1].values),0] # Shift to match desired distance
 
-    phiShapeEmpirical = phi.iloc[:,1].values-np.mean(phi.iloc[:,1])
+    xPos = phi.iloc[:,0]*pq.m
+    
+    xvals = xPos+distance -xPos[np.argmax(phi.iloc[:,1].values)] # Shift to match desired distance
+
+    phiShapeEmpirical = (phi.iloc[:,1].values-np.mean(phi.iloc[:,1]))
 
     
    ######## 
@@ -83,7 +85,7 @@ def editPhiShape(phi,distance):
         phiShapeEmpirical[lasta:] = 0
     
 
-    return xvals, phiShapeEmpirical
+    return xvals, phiShapeEmpirical*pq.V
 
 def FitPhiShape(fascIdx,distance,femDirectory):
     

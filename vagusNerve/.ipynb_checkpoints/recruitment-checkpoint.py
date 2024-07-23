@@ -63,8 +63,8 @@ def sortTitrationSpace(table):
 
 def Recruitment(current,diameters, fascIdx,stimulusDirectory):
     
-    d0Myelinated = 4e-6
-    d0Unmyelinated = 0.8e-6
+    d0Myelinated = 4e-6*pq.m
+    d0Unmyelinated = 0.8e-6*pq.m
     
    
     #### Loads and sorts titration factors from S4L. Sorting is justg to make sure that fibers and fascicles are in numerical order (ie, fiber 0-fiber50, fascicle0-fascicle39)

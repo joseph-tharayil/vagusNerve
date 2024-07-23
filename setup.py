@@ -21,6 +21,7 @@ setup(
     'mpi4py',
     'quantities',
     'openpyxl',
-    'pytest'
+    'pytest',
+    'pytest-cov'
     ]
    )

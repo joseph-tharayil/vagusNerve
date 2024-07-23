@@ -19,6 +19,7 @@ from vagusNerve.utils import *
 from vagusNerve.phiShape import *
 
 import quantities as pq
+from scipy.signal import find_peaks     
 
 def test_SFAP():
 
@@ -32,15 +33,15 @@ def test_SFAP():
 
     tmin=-3
     tmax=3
-    tphi=np.arange(tmin,tmax,(tmax-tmin)/(nx-1))#*pq.s
+    tphi=np.arange(tmin,tmax,(tmax-tmin)/(nx-1))*pq.s
     
-    d0List = np.array([20*1e-6,0.8e-6,1*1e-6])#*pq.m
+    d0List = np.array([20*1e-6,0.8e-6,1*1e-6])*pq.m
     
-    velocities = np.array([86.95,0.413])#*pq.m/pq.s
+    velocities = np.array([86.95,0.413])*pq.m/pq.s
     
-    ds = np.array([20e-6,0.8e-6,0.4e-6])#*pq.m
+    ds = np.array([20e-6,0.8e-6,0.4e-6])*pq.m
 
-    segmentLength= 1e-6#*pq.m
+    segmentLength= 1e-6*pq.m
 
     Vs = getVs(aps,tphi)
         
@@ -48,16 +49,16 @@ def test_SFAP():
 
     for fiberType in range(1):
         
-        d = 1e-6#*pq.m #ds[0]
+        d = 7.5e-6*pq.m 
 
         if fiberType == 0:
-            deff = d #.32*d
+            deff = d 
         else:
             deff = d
 
         velocityList = getVelocities(d0List,velocities,d)
         
-        distances = [.10757,0.0176]#*pq.m #distances[0]
+        distances = [.10757,0.0176]*pq.m
         
         if fiberType == 0:
             distance = distances[0]
@@ -71,9 +72,52 @@ def test_SFAP():
 
         der = np.diff(V,n=2)/((tphi[1]-tphi[0])**2)
 
-        phiFunc = FitPhiShape(0,distance, '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/FasciclePhiBigStandard/')
+        assert der.units == pq.V/pq.s**2
 
-        phiShape0 = PhiShape(velocityList,tphi,phiFunc)[0]
+        density_length = der*Scaling(deff,fiberType)*(1/v**2)
 
-        cv = fftconvolve(der*Scaling(deff,d0List[fiberType],fiberType)* (tphi[1]-tphi[0])/v,phi,mode='same') 
+        assert density_length.units == pq.A/pq.m
+
+        density_area = der*Scaling(deff,fiberType)*(1/v**2)/(np.pi*deff)
+
+        assert density_area.units == pq.A/pq.m**2
+
+        current = der*Scaling(d,fiberType)*(1/v**2)*segmentLength
+
+        assert current.units == pq.A
+
+        phiFunc = FitPhiShape(0,distance,'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/FasciclePhiBigStandard/')
+
+        phiShape0 = PhiShape(velocityList,tphi,phiFunc)
+
+        phi = phiShape0[fiberType]
+
+        cv = fftconvolve(der*Scaling(deff,fiberType)* (tphi[1]-tphi[0])/v,phi,mode='same') 
+
+        
+        time = tphi[1:-1]*1e3
+
+        cap = -cv/(726e-6)
+
+        np.save('cap.npy',cap)
+        
+        positive_peaks = find_peaks(cap,height=0.25e-6)
+
+        ppeakTimes = time[positive_peaks[0]]
+
+        assert len(ppeakTimes)==2
+        assert ppeakTimes[0] > 3 and ppeakTimes[0] < 4
+        assert ppeakTimes[1] > 3 and ppeakTimes[1] < 4
+        assert positive_peaks[1]['peak_heights'][0] > 2e-6 and positive_peaks[1]['peak_heights'][0] < 2.5e-6
+        assert positive_peaks[1]['peak_heights'][1] > .2e-6 and positive_peaks[1]['peak_heights'][1] < .5e-6
+
+        negative_peaks = find_peaks(-cap,height=0.25e-6)
+
+        npeakTimes = time[negative_peaks[0]]
+
+        assert len(npeakTimes)==2
+        assert npeakTimes[0] < ppeakTimes[0]
+        assert npeakTimes[1] > ppeakTimes[0] and npeakTimes[1] < ppeakTimes[1]
+        assert negative_peaks[1]['peak_heights'][0] > .4e-6 and negative_peaks[1]['peak_heights'][0] < .55e-6
+        assert negative_peaks[1]['peak_heights'][1] > 1.5e-6 and negative_peaks[1]['peak_heights'][1] < 2e-6
         

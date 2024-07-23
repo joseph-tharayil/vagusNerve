@@ -57,7 +57,7 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
 
     tmin=-3 # In s
     tmax=3 # In s
-    tphi=np.arange(tmin,tmax,(tmax-tmin)/(nx-1))
+    tphi=np.arange(tmin,tmax,(tmax-tmin)/(nx-1))*pq.s
 
 
     recordingCurrent = recording['recordingCurrent'] # Current in the S4L recording simulation

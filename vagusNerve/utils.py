@@ -32,20 +32,17 @@ from vagusNerve.phiShape import *
 def Scaling(d,fiberType): # Diameter dependent scaling of signal
     
     if fiberType == 0: # Myelinated fiber
-        resistivity_intracellular = 0.7  # ohm meters
+        resistivity_intracellular = 0.7*pq.ohm*pq.m  # ohm meters
         deff = d # Calculates internal diameter from external diameter
         
     elif fiberType == 1: # Unmyelinated Fiber, Sundt Model
-        resistivity_intracellular = 1
+        resistivity_intracellular = 1*pq.ohm*pq.m
         deff = d
         
     elif fiberType == 2: # Unmyelinated fiber, tigerholm model
-        resistivity_intracellular = 0.354 # ohm meters
+        resistivity_intracellular = 0.354*pq.ohm*pq.m # ohm meters
         deff = d
     
-    segment_length = 50e-6
-    
-    surfaceArea = segment_length * deff 
     
     xSectionArea = np.pi * (deff/2)**2
         
@@ -109,7 +106,7 @@ def FitAPShape(ap,tphi): # Interpolates AP shape for a given AP
     
     V[:10] = V[10]
          
-    return V
+    return V*pq.V
 
 def getDiameters(iteration):
     
@@ -119,7 +116,7 @@ def getDiameters(iteration):
     
     maxDiam = 15 #7 + 5*iteration/30 
     
-    d = np.linspace(minDiam,maxDiam,2000)*1e-6
+    d = np.linspace(minDiam,maxDiam,2000)*1e-6*pq.m
 
     return d
 
