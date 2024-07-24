@@ -1,28 +1,7 @@
 import numpy as np
 import pandas as pd
 
-
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
-from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
-from scipy.signal import fftconvolve, butter, sosfilt
-
-from scipy.stats import rv_histogram
-from mpi4py import MPI
-
-from math import gamma
-
-from scipy.optimize import curve_fit
-
 import quantities as pq
-
-import sys
 
 from vagusNerve.utils import *
 from vagusNerve.nerveSetup import *

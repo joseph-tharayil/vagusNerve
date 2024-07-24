@@ -1,24 +1,7 @@
 import numpy as np
 import pandas as pd
 
-
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
 from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
-from scipy.signal import fftconvolve, butter, sosfilt
-
-from scipy.stats import rv_histogram
-from mpi4py import MPI
-
-from math import gamma
-
-from scipy.optimize import curve_fit
 
 import quantities as pq
 
@@ -28,6 +11,7 @@ from vagusNerve.phiWeight import *
 from vagusNerve.utils import *
 from vagusNerve.nerveSetup import *
 from vagusNerve.phiShape import *
+
 
 def sortTitrationSpace(table): 
     
@@ -106,11 +90,9 @@ def Recruitment(current,diameters, fascIdx,stimulusDirectory):
             midpts2 = np.delete(midptsX,jumpRange)
             cdf2 = np.arange(0,len(midpts2))/len(midpts2)
             
-            cdfX = cdf2
-            midptsX = midpts2
+#            cdfX = cdf2
+#            midptsX = midpts2
             
-#         midptsX = np.insert(midptsX,0,0)
-#         cdfX = np.insert(cdfX,0,0)
         
         if j == 0:
             
