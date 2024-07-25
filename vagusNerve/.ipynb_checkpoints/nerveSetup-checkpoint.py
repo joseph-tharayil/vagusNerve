@@ -11,7 +11,7 @@ from scipy.optimize import curve_fit
 
 import quantities as pq
 
-def getFiberTypeArea(byFascicle=False):
+def getFiberTypeArea(fascIdx=None,byFascicle=False,fascTypes=None):
 
     ''' Gets the area occupied by each fiber type. If byFascicle==False, gets area over the nerve. Else, gets area over each fascicle'''
 
@@ -45,6 +45,9 @@ def getFiberTypeArea(byFascicle=False):
     
     if byFascicle:
 
+        if fascIdx is None or fascTypes is None:
+            raise AssertionError('Need to specify fascIdx and fascTypes when used in byFasc mode')
+
         #### Assigns fiber counts per fascicle for each type
     
         maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
@@ -77,11 +80,11 @@ def getAreaScaleFactor(fascicleSizes):
     
     return diamScaleFactor
 
-def getNumFibers(fascicleArea,fascIdx,fascTypes):
+def getNumFibers(fascicleSizes,fascIdx,fascTypes):
 
     diamScaleFactor = getAreaScaleFactor(fascicleSizes)
 
-    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea(byFascicle=True)   
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea(fascIdx=fascIdx,byFascicle=True,fascTypes=fascTypes)   
 
     fascicleNumber = fascicleArea[fascIdx] / (diamScaleFactor * (maffArea + meffArea + uaffArea + ueffArea)) 
     
