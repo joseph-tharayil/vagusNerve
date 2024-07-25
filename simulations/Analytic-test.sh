@@ -12,7 +12,7 @@
 #SBATCH --error=EEG_1_CoordsV.err
 #SBATCH --exclusive
 #SBATCH --mem=0
-#SBATCH --array=0-2
+#SBATCH --array=0-1
 
 #source ~/vagusEnv/bin/activate
 

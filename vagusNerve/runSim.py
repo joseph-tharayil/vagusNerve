@@ -16,13 +16,16 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     ## Selects fascicle and random seed for each available cpu
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
-    iteration = int(rank/39)
+
+    if comm.Get_size() != 39:
+        raise AssertionError('Must use exactly 39 ranks')
+    
     fascIdx = int(rank % 39)
     #####
 
     current = stimulus['current']
     
-    distances = [0.06,.05,0.01] # Stimulus-recording distance, in m
+    distances = [0.06,0.01] # Stimulus-recording distance, in m
          
     
     distance = distances[distanceIdx]
@@ -48,9 +51,9 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     velocities = [86.95,0.416] # Velcities for the above diamters
     
     
-    fascTypes = getFascicleTypes(iteration) # Defines whether fasicle is on left or right side of nerve
+    fascTypes = getFascicleTypes() # Defines whether fasicle is on left or right side of nerve
 
-    d = getDiameters(iteration)   
+    d = getDiameters()   
 
     stimulusDirectory = stimulus['stimulusDirectory']
 

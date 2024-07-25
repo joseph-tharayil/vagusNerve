@@ -1,28 +1,9 @@
 import numpy as np
 import pandas as pd
 
-
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
-from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
-from scipy.signal import fftconvolve, butter, sosfilt
-
-from scipy.stats import rv_histogram
 from mpi4py import MPI
 
-from math import gamma
-
-from scipy.optimize import curve_fit
-
 import quantities as pq
-
-import sys
 
 from vagusNerve.phiWeight import *
 from vagusNerve.utils import *
@@ -35,13 +16,16 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     ## Selects fascicle and random seed for each available cpu
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
-    iteration = int(rank/39)
+
+    if comm.Get_size() != 39:
+        raise AssertionError('Must use exactly 39 ranks')
+    
     fascIdx = int(rank % 39)
     #####
 
     current = stimulus['current']
     
-    distances = [0.06,.05,0.01] # Stimulus-recording distance, in m
+    distances = [0.06,0.01] # Stimulus-recording distance, in m
          
     
     distance = distances[distanceIdx]
@@ -67,9 +51,9 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     velocities = [86.95,0.416] # Velcities for the above diamters
     
     
-    fascTypes = getFascicleTypes(iteration) # Defines whether fasicle is on left or right side of nerve
+    fascTypes = getFascicleTypes() # Defines whether fasicle is on left or right side of nerve
 
-    d = getDiameters(iteration)   
+    d = getDiameters()   
 
     stimulusDirectory = stimulus['stimulusDirectory']
 

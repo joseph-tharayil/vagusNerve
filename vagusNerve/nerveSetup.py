@@ -169,6 +169,8 @@ def gammaDist(x,k,theta):
     return 1 / (gamma(k)*theta**k) * x**(k-1)*np.exp(-x/theta)
 
 def prob(d, vals,smooth):
+
+    d = d / pq.m # Removes units for compatibility reasons
     
     binSizeSamples = np.diff(d)[0]
     
@@ -190,11 +192,7 @@ def prob(d, vals,smooth):
         params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5])
         
         interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1
-    
-#         N = 5
-#         empiricalDiams = np.convolve(empiricalDiams, np.ones(N)/N, mode='valid')
-#         empiricalProbs = np.convolve(empiricalProbs, np.ones(N)/N, mode='valid')
-    
+
                       
     return interpD * binRatio
 
@@ -246,22 +244,13 @@ def getFasciclePositions():
         
     return np.array(fasciclePositions)
     
-def getFascicleTypes(iteration):
+def getFascicleTypes():
     
     fascPos = getFasciclePositions()
-    
-    nerveCenter = np.mean(fascPos,axis=0)
-    
+        
     # Selects whether fascicle should have more afferent or more efferent fibers, based on whether it is left or right (or above vs below) dividing line
     
-    if iteration == 0:
-        fascTypes = fascPos[:,0] > 8
-    elif iteration == 1:
-        fascTypes = fascPos[:,0] < 8
-    elif iteration == 2:
-        fascTypes = fascPos[:,1] > -9
-    else:
-        fascTypes = fascPos[:,1] < -9
+    fascTypes = fascPos[:,0] > 8
     
     return fascTypes
 

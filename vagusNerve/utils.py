@@ -90,7 +90,7 @@ def FitAPShape(ap,tphi): # Interpolates AP shape for a given AP
          
     return V*pq.V
 
-def getDiameters(iteration):
+def getDiameters():
     
    
     minDiam = .1

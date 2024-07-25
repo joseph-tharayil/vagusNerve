@@ -3,10 +3,10 @@ import pandas as pd
 
 import quantities as pq
 
-from vagusNerve.utils import *
-from vagusNerve.nerveSetup import *
-from vagusNerve.phiShape import *
-from vagusNerve.recruitment import *
+from .utils import *
+from .nerveSetup import getFiberTypeFractions
+from .phiShape import *
+from .recruitment import *
 
 def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory):
     

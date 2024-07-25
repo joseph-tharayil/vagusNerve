@@ -23,6 +23,10 @@ from scipy.signal import find_peaks
 
 def test_SFAP():
 
+    '''
+    Calculates single-fiber action potential for a myelinated fiber with diameter 7.5 um. Tests that all of the units are correct, and that the features of the SFAP match those of the Sim4Life simulation
+    '''
+
     ap = pd.read_excel('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/APShape20.xlsx')
 
     ap2 = pd.read_excel('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/APShapePoint8.xlsx')
