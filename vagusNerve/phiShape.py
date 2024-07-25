@@ -7,9 +7,6 @@ from scipy.signal import fftconvolve, butter, sosfilt
 
 import quantities as pq
 
-from vagusNerve.phiWeight import *
-from vagusNerve.utils import *
-from vagusNerve.nerveSetup import *
 
 def editPhiShape(phi,distance):
     

@@ -7,9 +7,6 @@ from scipy.signal import fftconvolve, butter, sosfilt
 
 import quantities as pq
 
-from vagusNerve.phiWeight import *
-from vagusNerve.nerveSetup import *
-from vagusNerve.phiShape import *
 
 def Scaling(d,fiberType): # Diameter dependent scaling of signal
     
