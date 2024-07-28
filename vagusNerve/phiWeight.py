@@ -12,11 +12,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory):
     phiWeight = [ [[],[]], [[],[]] ]
     
     recruitment = Recruitment(current,d,fascIdx,stimulusDirectory)
-    
-    scaling = []
-    
-    scalingFactors = [1,2]
-    
+            
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes)
     
     numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes)
@@ -30,19 +26,17 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory):
     phiWeight[1][0] =  UaffProb(d,uaffProb)  * recruitment[-1] * numFibersPerFascicle
     phiWeight[1][1] =  UeffProb(d,ueffProb)  * recruitment[-1] * numFibersPerFascicle
 
-    return phiWeight,recruitment
+    return phiWeight
 
 def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory):
     
     phiWeight = []
-    recruitment = []
     
     for c in current:
         
-        p, rec = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory)
+        p = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory)
 
         phiWeight.append(p)
-        recruitment.append(rec)
         
 
     phiWeight0 = phiWeight[0][0][0][np.newaxis]

@@ -11,16 +11,11 @@ from scipy.optimize import curve_fit
 
 import quantities as pq
 
-def getFiberTypeArea(fascIdx=None,byFascicle=False,fascTypes=None):
+
+def getFiberTypeArea(scalingFactors):
 
     ''' Gets the area occupied by each fiber type. If byFascicle==False, gets area over the nerve. Else, gets area over each fascicle'''
 
-    ### Overall fiber counts in the nerve
-    maffcount = 34000
-    meffcount = 14800
-    ueffcount = 21800 
-    uaffcount = 315000
-    ####
 
     #### Loads diameter distributions
     maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
@@ -42,27 +37,32 @@ def getFiberTypeArea(fascIdx=None,byFascicle=False,fascTypes=None):
     ueffD = (ueffvals[:-1,0] + ueffvals[1:,0])/2 * 1e-6 # Converts from um to m
     ueffP = (ueffvals[:-1,1] + ueffvals[1:,1])/2
     #######
-    
-    if byFascicle:
+            
+    maffArea = scalingFactors[0] * np.sum(maffD**2*maffP / 100)
+    meffArea = scalingFactors[1] * np.sum(meffD**2*meffP / 100)
+    uaffArea = scalingFactors[2] * np.sum(uaffD**2*uaffP / 100)
+    ueffArea = scalingFactors[3] * np.sum(ueffD**2*ueffP / 100)
 
-        if fascIdx is None or fascTypes is None:
-            raise AssertionError('Need to specify fascIdx and fascTypes when used in byFasc mode')
+    return maffArea, meffArea, uaffArea, ueffArea
 
-        #### Assigns fiber counts per fascicle for each type
-    
-        maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
+def getFiberTypeArea_Overall():
 
-        maffArea = maffFrac * np.sum(maffD**2*maffP / 100)
-        meffArea = meffFrac * np.sum(meffD**2*meffP / 100)
-        uaffArea = uaffFrac * np.sum(uaffD**2*uaffP / 100)
-        ueffArea = ueffFrac * np.sum(ueffD**2*ueffP / 100)
+    ### Overall fiber counts in the nerve
+    maffcount = 34000
+    meffcount = 14800
+    ueffcount = 21800 
+    uaffcount = 315000
+    ####
 
-    else:
-        
-        maffArea = maffcount * np.sum(maffD**2*maffP / 100)
-        meffArea = meffcount * np.sum(meffD**2*meffP / 100)
-        uaffArea = uaffcount * np.sum(uaffD**2*uaffP / 100)
-        ueffArea = ueffcount * np.sum(ueffD**2*ueffP / 100)
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea([maffcount, meffcount, uaffcount, ueffcount])
+
+    return maffArea, meffArea, uaffArea, ueffArea
+
+def getFiberTypeArea_byFascicle(fascIdx, fascTypes):
+
+    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
+
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea([maffFrac, meffFrac, uaffFrac, ueffFrac])
 
     return maffArea, meffArea, uaffArea, ueffArea
 
@@ -72,7 +72,7 @@ def getAreaScaleFactor(fascicleSizes):
     Finds ratio of total fascicle area to total area occupied by fibers. Assumes that fiber type has no impact on this ratio
     '''
         
-    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea(byFascicle=False)
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea_Overall()
 
     totalFiberArea = maffArea + meffArea + uaffArea + ueffArea
 
@@ -84,7 +84,7 @@ def getNumFibers(fascicleSizes,fascIdx,fascTypes):
 
     diamScaleFactor = getAreaScaleFactor(fascicleSizes)
 
-    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea(fascIdx=fascIdx,byFascicle=True,fascTypes=fascTypes)   
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea_byFascicle(fascIdx,fascTypes)   
 
     fascicleNumber = fascicleSizes[fascIdx] / (diamScaleFactor * (maffArea + meffArea + uaffArea + ueffArea)) 
     
@@ -146,7 +146,7 @@ def gammaDist(x,k,theta):
     
     return 1 / (gamma(k)*theta**k) * x**(k-1)*np.exp(-x/theta)
 
-def prob(d, vals,smooth):
+def prob(d, vals):
 
     d = d / pq.m # Removes units for compatibility reasons
     
@@ -164,12 +164,10 @@ def prob(d, vals,smooth):
     interpD = interp(d)
     
     interpD[np.where(interpD<0)]=0
+        
+    params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5]) # Fits gamma distribution to digitized data
     
-    if smooth:
-        
-        params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5])
-        
-        interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1
+    interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1 
 
                       
     return interpD * binRatio
@@ -179,25 +177,25 @@ def MaffProb(d, maffProb):
     
     maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
     
-    return maffProb * prob(d,maffvals,True)
+    return maffProb * prob(d,maffvals)
 
 def MeffProb(d, meffProb):
     
     meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
     
-    return meffProb * prob(d,meffvals,True)
+    return meffProb * prob(d,meffvals)
 
 def UaffProb(d, uaffProb):
     
     uaffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
     
-    return uaffProb * prob(d,uaffvals,False)
+    return uaffProb * prob(d,uaffvals)
 
 def UeffProb(d, ueffProb):
     
     ueffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
     
-    return ueffProb * prob(d,ueffvals,True)
+    return ueffProb * prob(d,ueffvals)
 
 def getFasciclePositions():
     

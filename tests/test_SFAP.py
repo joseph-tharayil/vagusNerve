@@ -60,7 +60,7 @@ def test_SFAP():
         else:
             deff = d
 
-        velocityList = getVelocities(d0List,velocities,d)
+        velocityList = getVelocities(d)
         
         distances = [.10757,0.0176]*pq.m
         
