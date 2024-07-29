@@ -1,1 +1,6 @@
 mkdir: cannot create directory ‘/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic-test/’: File exists
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2361809 ON r2i2n18 CANCELLED AT 2024-07-29T15:58:51 ***
+slurmstepd: error: *** STEP 2361809.0 ON r2i2n18 CANCELLED AT 2024-07-29T15:58:51 ***
+slurmstepd: error: *** STEP 2361810.0 ON r2i2n2 CANCELLED AT 2024-07-29T15:58:51 ***
+slurmstepd: error: *** JOB 2361810 ON r2i2n2 CANCELLED AT 2024-07-29T15:58:51 ***

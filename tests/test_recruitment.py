@@ -23,18 +23,18 @@ def test_removeDuplicates():
 
 def test_getCdf():
 
-    titrationFactors = np.arange(10)
+    titrationFactors = np.arange(1,10)
     fascIdx = 0
 
     midpts, cdf = getCdf(titrationFactors, fascIdx,removeJumps=False)
 
-    np.testing.assert_equal(midpts,titrationFactors)
-    np.testing.assert_equal(cdf,np.arange(1,11)/10)
+    np.testing.assert_equal(midpts,np.arange(10))
+    np.testing.assert_equal(cdf,np.arange(10)/9)
 
     midpts, cdf = getCdf(titrationFactors, fascIdx,removeJumps=True)
 
-    np.testing.assert_equal(midpts,titrationFactors)
-    np.testing.assert_equal(cdf,np.arange(1,11)/10)
+    np.testing.assert_equal(midpts,np.arange(10))
+    np.testing.assert_equal(cdf,np.arange(10)/9)
 
 def test_jumpRemover():
 
