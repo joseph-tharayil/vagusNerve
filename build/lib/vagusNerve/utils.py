@@ -2,50 +2,26 @@ import numpy as np
 import pandas as pd
 
 
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
 from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
 from scipy.signal import fftconvolve, butter, sosfilt
-
-from scipy.stats import rv_histogram
-from mpi4py import MPI
-
-from math import gamma
-
-from scipy.optimize import curve_fit
 
 import quantities as pq
 
-import sys
-
-from vagusNerve.phiWeight import *
-from vagusNerve.utils import *
-from vagusNerve.nerveSetup import *
-from vagusNerve.phiShape import *
 
 def Scaling(d,fiberType): # Diameter dependent scaling of signal
     
     if fiberType == 0: # Myelinated fiber
-        resistivity_intracellular = 0.7  # ohm meters
+        resistivity_intracellular = 0.7*pq.ohm*pq.m  # ohm meters
         deff = d # Calculates internal diameter from external diameter
         
     elif fiberType == 1: # Unmyelinated Fiber, Sundt Model
-        resistivity_intracellular = 1
+        resistivity_intracellular = 1*pq.ohm*pq.m
         deff = d
         
     elif fiberType == 2: # Unmyelinated fiber, tigerholm model
-        resistivity_intracellular = 0.354 # ohm meters
+        resistivity_intracellular = 0.354*pq.ohm*pq.m # ohm meters
         deff = d
     
-    segment_length = 50e-6
-    
-    surfaceArea = segment_length * deff 
     
     xSectionArea = np.pi * (deff/2)**2
         
@@ -58,7 +34,11 @@ def Scaling(d,fiberType): # Diameter dependent scaling of signal
     return current_scale_factor
 
 
-def getVelocities(d0List,velocities,dList):
+def getVelocities(dList):
+
+    d0List = np.array([20*1e-6,0.8*1e-6])*pq.m # Diameters of myelinated and unmyelinated fibers used to calculate velocities
+
+    velocities = np.array([86.95,0.416])*pq.m/pq.s # Velcities for the above diamters
 
     velocityList = []
 
@@ -109,9 +89,9 @@ def FitAPShape(ap,tphi): # Interpolates AP shape for a given AP
     
     V[:10] = V[10]
          
-    return V
+    return V*pq.V
 
-def getDiameters(iteration):
+def getDiameters():
     
    
     minDiam = .1
@@ -119,7 +99,7 @@ def getDiameters(iteration):
     
     maxDiam = 15 #7 + 5*iteration/30 
     
-    d = np.linspace(minDiam,maxDiam,2000)*1e-6
+    d = np.linspace(minDiam,maxDiam,2000)*1e-6*pq.m
 
     return d
 

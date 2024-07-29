@@ -1,32 +1,9 @@
 import numpy as np
 import pandas as pd
 
-
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
-from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
-from scipy.signal import fftconvolve, butter, sosfilt
-
-from scipy.stats import rv_histogram
-from mpi4py import MPI
-
-from math import gamma
-
-from scipy.optimize import curve_fit
-
 import quantities as pq
 
-import sys
-
-from vagusNerve.utils import *
 from vagusNerve.nerveSetup import *
-from vagusNerve.phiShape import *
 from vagusNerve.recruitment import *
 
 def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory):
@@ -35,11 +12,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory):
     phiWeight = [ [[],[]], [[],[]] ]
     
     recruitment = Recruitment(current,d,fascIdx,stimulusDirectory)
-    
-    scaling = []
-    
-    scalingFactors = [1,2]
-    
+            
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes)
     
     numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes)
@@ -53,19 +26,17 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory):
     phiWeight[1][0] =  UaffProb(d,uaffProb)  * recruitment[-1] * numFibersPerFascicle
     phiWeight[1][1] =  UeffProb(d,ueffProb)  * recruitment[-1] * numFibersPerFascicle
 
-    return phiWeight,recruitment
+    return phiWeight
 
 def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory):
     
     phiWeight = []
-    recruitment = []
     
     for c in current:
         
-        p, rec = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory)
+        p = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory)
 
         phiWeight.append(p)
-        recruitment.append(rec)
         
 
     phiWeight0 = phiWeight[0][0][0][np.newaxis]

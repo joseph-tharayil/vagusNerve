@@ -165,7 +165,7 @@ def prob(d, vals):
     
     interpD[np.where(interpD<0)]=0
         
-    params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5]) # Fits gamma distribution to digitized data
+    params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5],bounds=(0,np.inf)) # Fits gamma distribution to digitized data
     
     interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1 
 

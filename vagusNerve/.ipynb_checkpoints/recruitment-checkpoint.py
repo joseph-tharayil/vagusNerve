@@ -59,7 +59,7 @@ def removeDuplicates(midptsX):
 
     return midptsX
 
-def jumpRemover(midptsX,cdfX, fascIdx):
+def jumpRemover(midptsX, fascIdx):
 
     ### Finds and removes plateaus in the CDF. These occur because of a handful of fibers which have much higher thresholds than the others, which is not realistic
 
@@ -72,15 +72,11 @@ def jumpRemover(midptsX,cdfX, fascIdx):
             jumpIdx = jumpIdx[0]
             
         end = len(midptsX)
-        jumpRange = np.arange(jumpIdx,end)
+        jumpRange = np.arange(jumpIdx+1,end)
 
-        midpts2 = np.delete(midptsX,jumpRange)
-        cdf2 = np.arange(0,len(midpts2))/len(midpts2)
-        
-        cdfX = cdf2
-        midptsX = midpts2
+        midptsX = np.delete(midptsX,jumpRange)
 
-    return midptsX, cdfX
+    return midptsX
 
 def getCdf(titrationFac, fascIdx,removeJumps=True):
 
@@ -89,19 +85,19 @@ def getCdf(titrationFac, fascIdx,removeJumps=True):
     midptsX = np.sort(titrationFac)
         
     midptsX = removeDuplicates(midptsX)
-    
-    cdfX = np.arange(0,len(midptsX))/len(midptsX)
 
     if removeJumps:
     
-        midptsX, cdfX = jumpRemover(midptsX, cdfX, fascIdx)
+        midptsX = jumpRemover(midptsX, fascIdx)
+
+    cdfX = np.arange(1,len(midptsX)+1)/len(midptsX)
 
     return midptsX, cdfX
 
 
 def interpolateTitrationFactors(titrationFac, current, diameters, d0, fascIdx,removeJumps=True):
 
-    midptsX, cdfX = getCdf(titrationFac, fascIdx,removeJumps=True)
+    midptsX, cdfX = getCdf(titrationFac, fascIdx,removeJumps)
     
     interp = interp1d(midptsX,cdfX,bounds_error=False,fill_value=(0,1))
 

@@ -1,33 +1,12 @@
 import numpy as np
 import pandas as pd
 
-
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
 from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
-from scipy.signal import fftconvolve, butter, sosfilt
-
-from scipy.stats import rv_histogram
-from mpi4py import MPI
-
-from math import gamma
-
-from scipy.optimize import curve_fit
 
 import quantities as pq
 
 import sys
 
-from vagusNerve.phiWeight import *
-from vagusNerve.utils import *
-from vagusNerve.nerveSetup import *
-from vagusNerve.phiShape import *
 
 def sortTitrationSpace(table): 
     
@@ -60,84 +39,93 @@ def sortTitrationSpace(table):
     return table.iloc[:,indices]
 
 
+def loadTitrationFactors(stimulusDirectory):
 
-def Recruitment(current,diameters, fascIdx,stimulusDirectory):
-    
-    d0Myelinated = 4e-6
-    d0Unmyelinated = 0.8e-6
-    
-   
-    #### Loads and sorts titration factors from S4L. Sorting is justg to make sure that fibers and fascicles are in numerical order (ie, fiber 0-fiber50, fascicle0-fascicle39)
+        #### Loads and sorts titration factors from S4L. Sorting is justg to make sure that fibers and fascicles are in numerical order (ie, fiber 0-fiber50, fascicle0-fascicle39)
 
     titrationFactorsMeff = sortTitrationSpace(pd.read_excel(stimulusDirectory['myelinated'],index_col=0)).iloc[-1].values
     
     titrationFactorsUaff = sortTitrationSpace(pd.read_excel(stimulusDirectory['unmyelinated'],index_col=0)).iloc[-1].values
 
-    ####
+    return titrationFactorsMeff, titrationFactorsUaff
 
+def removeDuplicates(midptsX):
 
-    titrationFactors = [titrationFactorsMeff, titrationFactorsUaff]
-
-
-    for j in [0,1]: # Myelinated and unmyelinated, respectively
-
-        titrationFac = np.array(titrationFactors[j][fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
-        
-        
-        midptsX = np.sort(titrationFac)
-        
-        dupIdx =  np.where(np.diff(midptsX)==0)
-        
-        midptsX = np.delete(midptsX,dupIdx)
-        
-        cdfX = np.arange(0,len(midptsX))/len(midptsX)
-        
-        diff = np.diff(midptsX/midptsX[0])
-                
-        jumpIdx = np.where(diff > 1.25)[0]
-                
-        if fascIdx != 35 and j == 0 and len(jumpIdx)>0:
-            if len(jumpIdx)>1:
-                jumpIdx = jumpIdx[0]
-                
-            end = len(midptsX)
-            jumpRange = np.arange(jumpIdx,end)
-
-            midpts2 = np.delete(midptsX,jumpRange)
-            cdf2 = np.arange(0,len(midpts2))/len(midpts2)
-            
-            cdfX = cdf2
-            midptsX = midpts2
-            
-#         midptsX = np.insert(midptsX,0,0)
-#         cdfX = np.insert(cdfX,0,0)
-        
-        if j == 0:
-            
-            midpts = midptsX
-            cdf = cdfX
-
-        if j == 1:
-            
-            midptsU = midptsX
-            cdfU = cdfX
-
-### Defines CDF of the titration curves
+    ### Removes points which have same titration factor. This removes vertical segments in the cdf, which can cause problems with interplation
     
-    interp = interp1d(midpts,cdf,bounds_error=False,fill_value=(0,1))
+    dupIdx =  np.where(np.diff(midptsX)==0)
+    
+    midptsX = np.delete(midptsX,dupIdx)
 
-    interpU = interp1d(midptsU,cdfU,bounds_error=False,fill_value=(0,1))
-##############
+    return midptsX
+
+def jumpRemover(midptsX,cdfX, fascIdx):
+
+    ### Finds and removes plateaus in the CDF. These occur because of a handful of fibers which have much higher thresholds than the others, which is not realistic
+
+    diff = np.diff(midptsX/midptsX[0])
+            
+    jumpIdx = np.where(diff > 1.25)[0]
+            
+    if fascIdx != 35 and len(jumpIdx)>0:
+        if len(jumpIdx)>1:
+            jumpIdx = jumpIdx[0]
+            
+        end = len(midptsX)
+        jumpRange = np.arange(jumpIdx,end)
+
+        midpts2 = np.delete(midptsX,jumpRange)
+        cdf2 = np.arange(0,len(midpts2))/len(midpts2)
         
-    myelinated = []
-    unmyelinated = []
+        cdfX = cdf2
+        midptsX = midpts2
+
+    return midptsX, cdfX
+
+def getCdf(titrationFac, fascIdx,removeJumps=True):
+
+    ### Defines CDF of the titration curves
+
+    midptsX = np.sort(titrationFac)
+        
+    midptsX = removeDuplicates(midptsX)
+    
+    cdfX = np.arange(0,len(midptsX))/len(midptsX)
+
+    if removeJumps:
+    
+        midptsX, cdfX = jumpRemover(midptsX, cdfX, fascIdx)
+
+    return midptsX, cdfX
 
 
-    for j, d in enumerate(diameters):
+def interpolateTitrationFactors(titrationFac, current, diameters, d0, fascIdx,removeJumps=True):
 
-        myelinated.append(interp(current*(d/d0Myelinated)))
+    midptsX, cdfX = getCdf(titrationFac, fascIdx,removeJumps)
+    
+    interp = interp1d(midptsX,cdfX,bounds_error=False,fill_value=(0,1))
 
-        unmyelinated.append(interpU(current*d/d0Unmyelinated))
+    thresholds = []
 
+    for d in diameters:
+
+        thresholds.append(interp(current*(d/d0)))
+
+    return thresholds
+
+
+def Recruitment(current,diameters, fascIdx,stimulusDirectory):
+    
+    d0Myelinated = 4e-6*pq.m
+    d0Unmyelinated = 0.8e-6*pq.m
+
+    titrationFactorsMeff, titrationFactorsUaff = loadTitrationFactors(stimulusDirectory)
+
+
+    titrationFacM = np.array(titrationFactorsMeff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
+    titrationFacU = np.array(titrationFactorsUaff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
+        
+    myelinated = interpolateTitrationFactors(titrationFacM, current, diameters, d0Myelinated, fascIdx,removeJumps=True)
+    unmyelinated = interpolateTitrationFactors(titrationFacU, current, diameters, d0Unmyelinated, fascIdx,removeJumps=False)
     
     return [myelinated,unmyelinated]

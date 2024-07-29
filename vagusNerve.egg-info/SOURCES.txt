@@ -1,5 +1,11 @@
 setup.py
 tests/test_SFAP.py
+tests/test_nerveSetup.py
+tests/test_phiShape.py
+tests/test_phiWeight.py
+tests/test_recruitment.py
+tests/test_runSim.py
+tests/test_utils.py
 vagusNerve/nerveSetup.py
 vagusNerve/phiShape.py
 vagusNerve/phiWeight.py

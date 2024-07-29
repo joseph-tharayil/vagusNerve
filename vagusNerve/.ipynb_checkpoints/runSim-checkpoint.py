@@ -89,8 +89,8 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
     For each diameter, returns scaling factor eta, which links the transmembrane current to the diameter of the fiber
     '''
 
-    scaling0 = (Scaling(d,0)* (time[1]-time[0])/velocityList[0])
-    scaling1 = (Scaling(d,1)* (time[1]-time[0])/velocityList[1])
+    scaling0 = Scaling(d,0)* (time[1]-time[0])/velocityList[0]
+    scaling1 = Scaling(d,1)* (time[1]-time[0])/velocityList[1]
 
     return scaling0, scaling1
 
@@ -100,20 +100,25 @@ def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, vel
 
     myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
-    np.save(outputfolder+'/diameters/scaling_'+str(fascIdx)+'.npy',[scaling0,scaling1])
+    myelinatedCurrentScaling = myelinatedCurrentScaling.magnitude
+    unmyelinatedCurrentScaling = unmyelinatedCurrentScaling.magnitude
+
+    print(unmyelinatedCurrentScaling)
+
+    #np.save(outputfolder+'/diameters/scaling_'+str(fascIdx)+'.npy',[scaling0,scaling1])
     
-    maffscaling = phiWeightMaff.T * myelinatedCurrentScaling[:,np.newaxis]
+    maffscaling = phiWeightMaff.T * myelinatedCurrentScaling[:,np.newaxis] 
     meffscaling = phiWeightMeff.T * myelinatedCurrentScaling[:,np.newaxis]
     uaffscaling = phiWeightUaff.T * unmyelinatedCurrentScaling[:,np.newaxis]
     ueffscaling = phiWeightUeff.T * unmyelinatedCurrentScaling[:,np.newaxis]
     
-    np.save(outputfolder+'/maff/scaling_'+str(fascIdx)+'.npy',maffscaling)
+   # np.save(outputfolder+'/maff/scaling_'+str(fascIdx)+'.npy',maffscaling)
     
-    np.save(outputfolder+'/meff/scaling_'+str(fascIdx)+'.npy',meffscaling)
+    #np.save(outputfolder+'/meff/scaling_'+str(fascIdx)+'.npy',meffscaling)
     
-    np.save(outputfolder+'/uaff/scaling_'+str(fascIdx)+'.npy',uaffscaling)
-    
-    np.save(outputfolder+'/ueff/scaling_'+str(fascIdx)+'.npy',ueffscaling)
+   # np.save(outputfolder+'/uaff/scaling_'+str(fascIdx)+'.npy',uaffscaling)
+    #
+   # np.save(outputfolder+'/ueff/scaling_'+str(fascIdx)+'.npy',ueffscaling)
 
     return [maffscaling, meffscaling, uaffscaling, ueffscaling]
 
@@ -121,21 +126,25 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType, outputfolder, di
 
     phi = [0,0,0,0]
 
+    
     phiShapeMyelinated, phiShapeUnmyelinated = phiShapesByType
 
     maffScaling, meffScaling, uaffScaling, ueffScaling = scalingFactorsByType
 
-    phi[0] += np.matmul(phiShapeMyelinated.T,maffScaling)
+    print(maffScaling.shape)
+    print(phiShapeMyelinated.shape)
     
-    phi[1] += np.matmul(phiShapeMyelinated.T,meffScaling)
+    phi[0] += phiShapeMyelinated.T @ maffScaling 
     
-    phi[2] += np.matmul(phiShapeUnmyelinated.T,uaffScaling)
+    phi[1] += phiShapeMyelinated.T @ meffScaling 
     
-    phi[3] += np.matmul(phiShapeUnmyelinated.T,ueffScaling)
+    phi[2] += phiShapeUnmyelinated.T @ uaffScaling 
+    
+    phi[3] += phiShapeUnmyelinated.T @ ueffScaling 
 
     phi = np.array(phi)
     
-    np.save(outputfolder+'/phis/'+str(distanceIdx)+'/'+str(fascIdx)+'.npy',phi)
+   # np.save(outputfolder+'/phis/'+str(distanceIdx)+'/'+str(fascIdx)+'.npy',phi)
 
     return phi
 
@@ -164,15 +173,15 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
    
     fascIdx = getFascIdx()
     
-    current = stimulus['current']
-    stimulusDirectory = stimulus['stimulusDirectory']
+    current = stimulus['current'] # Current applied in finite element simulation of recruitment
+    stimulusDirectory = stimulus['stimulusDirectory'] # Location of titration outputs from S4:
     
     distance = getDistance(distanceIdx)
 
     time = getTime()
 
-    recordingCurrent = recording['recordingCurrent'] # Current in the S4L recording simulation
-    recordingDirectory = recording['recordingDirectory']
+    recordingCurrent = recording['recordingCurrent']*pq.A # Current in the S4L recording simulation
+    recordingDirectory = recording['recordingDirectory'] # Location of exported potential fields interpolated along fascicle centers
 
     d = getDiameters() 
 
@@ -182,7 +191,7 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
 
     scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder)
 
-    phiShapesByType = getimeShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
         
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, outputfolder, distanceIdx)
     

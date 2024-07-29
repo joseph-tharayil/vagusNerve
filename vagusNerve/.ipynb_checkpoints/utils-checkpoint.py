@@ -36,9 +36,9 @@ def Scaling(d,fiberType): # Diameter dependent scaling of signal
 
 def getVelocities(dList):
 
-    d0List = [20*1e-6,0.8*1e-6]*pq.m # Diameters of myelinated and unmyelinated fibers used to calculate velocities
+    d0List = np.array([20*1e-6,0.8*1e-6])*pq.m # Diameters of myelinated and unmyelinated fibers used to calculate velocities
 
-    velocities = [86.95,0.416]*pq.m/pq.s # Velcities for the above diamters
+    velocities = np.array([86.95,0.416])*pq.m/pq.s # Velcities for the above diamters
 
     velocityList = []
 

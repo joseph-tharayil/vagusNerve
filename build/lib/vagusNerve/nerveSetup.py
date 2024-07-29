@@ -1,20 +1,9 @@
 import numpy as np
 import pandas as pd
 
-
-from scipy.stats import norm
-from scipy.io import loadmat
-
-from scipy.optimize import leastsq
-from scipy.optimize import least_squares
-from scipy.io import loadmat
 from scipy.interpolate import interp1d
-from scipy.stats import norm
-from scipy.fft import fft, ifft, fftshift,ifftshift
-from scipy.signal import fftconvolve, butter, sosfilt
 
 from scipy.stats import rv_histogram
-from mpi4py import MPI
 
 from math import gamma
 
@@ -22,23 +11,12 @@ from scipy.optimize import curve_fit
 
 import quantities as pq
 
-import sys
 
-from vagusNerve.phiWeight import *
-from vagusNerve.utils import *
-from vagusNerve.nerveSetup import *
-from vagusNerve.phiShape import *
+def getFiberTypeArea(scalingFactors):
+
+    ''' Gets the area occupied by each fiber type. If byFascicle==False, gets area over the nerve. Else, gets area over each fascicle'''
 
 
-def getAreaScaleFactor():
-    
-    ### Overall fiber counts in the nerve
-    maffcount = 34000
-    meffcount = 14800
-    ueffcount = 21800 
-    uaffcount = 315000
-    ####
-    
     #### Loads diameter distributions
     maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
     meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
@@ -47,86 +25,72 @@ def getAreaScaleFactor():
     #####
     
     #### Gets midpoints of histogram bins
-    maffD = (maffvals[:-1,0] + maffvals[1:,0])/2 * 1e-6
+    maffD = (maffvals[:-1,0] + maffvals[1:,0])/2 * 1e-6 # Converts from um to m
     maffP = (maffvals[:-1,1] + maffvals[1:,1])/2 
 
-    meffD = (meffvals[:-1,0] + meffvals[1:,0])/2 * 1e-6
+    meffD = (meffvals[:-1,0] + meffvals[1:,0])/2 * 1e-6 # Converts from um to m
     meffP = (meffvals[:-1,1] + meffvals[1:,1])/2
 
-    uaffD = (uaffvals[:-1,0] + uaffvals[1:,0])/2 * 1e-6
+    uaffD = (uaffvals[:-1,0] + uaffvals[1:,0])/2 * 1e-6 # Converts from um to m
     uaffP = (uaffvals[:-1,1] + uaffvals[1:,1])/2
 
-    ueffD = (ueffvals[:-1,0] + ueffvals[1:,0])/2 * 1e-6
+    ueffD = (ueffvals[:-1,0] + ueffvals[1:,0])/2 * 1e-6 # Converts from um to m
     ueffP = (ueffvals[:-1,1] + ueffvals[1:,1])/2
     #######
-    
-    
-    maffArea = np.sum(maffD**2*maffP*maffcount / 100)
-    meffArea = np.sum(meffD**2*meffP*meffcount / 100)
-    uaffArea = np.sum(uaffD**2*uaffP*uaffcount / 100)
-    ueffArea = np.sum(ueffD**2*ueffP*ueffcount / 100)
+            
+    maffArea = scalingFactors[0] * np.sum(maffD**2*maffP / 100)
+    meffArea = scalingFactors[1] * np.sum(meffD**2*meffP / 100)
+    uaffArea = scalingFactors[2] * np.sum(uaffD**2*uaffP / 100)
+    ueffArea = scalingFactors[3] * np.sum(ueffD**2*ueffP / 100)
 
-    totalFiberArea = maffArea + meffArea + uaffArea + ueffArea
+    return maffArea, meffArea, uaffArea, ueffArea
 
-    fascicleSizes = np.array([.24*.26,.16*.16,.18*.2,.16*.16,.12*.14,.16*.16,.1*.12,.24*.2,.2*.24,.18*.2,.14*.12,
-                    .16*.16,.1*.08,.16*.14,.12*.12,.08*.08,.14*.12,.1*.1,.2*.18,.14*.14,.14*.12,
-                .12*.12,.22*.18,.14*.14,.14*.12,.18*.18,.16*.16,.1*.16,.12*.12,.22*.22,.1*.1,.1*.08,
-                .12*.12,.1*.1,.12*.1,.14*.1,.1*.1,.14*.12,.18*.16])*1e-3**2
-    
-    diamScaleFactor = (np.sum(fascicleSizes)/totalFiberArea)
-    
-    return diamScaleFactor
+def getFiberTypeArea_Overall():
 
-def getNumFibers(fascicleArea,diamScaleFactor,fascIdx,fascTypes):
-
-    
-    #### Assigns fiber counts per fascicle for each type
-    
-    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
-        
-    ###########
-    
-    ### Overall counts in the nerve
+    ### Overall fiber counts in the nerve
     maffcount = 34000
     meffcount = 14800
     ueffcount = 21800 
     uaffcount = 315000
-    #######
+    ####
+
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea([maffcount, meffcount, uaffcount, ueffcount])
+
+    return maffArea, meffArea, uaffArea, ueffArea
+
+def getFiberTypeArea_byFascicle(fascIdx, fascTypes):
+
+    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
+
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea([maffFrac, meffFrac, uaffFrac, ueffFrac])
+
+    return maffArea, meffArea, uaffArea, ueffArea
+
+def getAreaScaleFactor(fascicleSizes):
+
+    '''
+    Finds ratio of total fascicle area to total area occupied by fibers. Assumes that fiber type has no impact on this ratio
+    '''
+        
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea_Overall()
+
+    totalFiberArea = maffArea + meffArea + uaffArea + ueffArea
+
+    diamScaleFactor = (np.sum(fascicleSizes)/totalFiberArea)
     
-    
-    ##### Loads diameter distribution histograms
-    maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
-    meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
+    return diamScaleFactor
 
-    uaffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
-    ueffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
-    #######
-    
-    ### Gets midpoints of histogram bins
-    maffD = (maffvals[:-1,0] + maffvals[1:,0])/2 *1e-6
-    maffP = (maffvals[:-1,1] + maffvals[1:,1])/2 
+def getNumFibers(fascicleSizes,fascIdx,fascTypes):
 
-    meffD = (meffvals[:-1,0] + meffvals[1:,0])/2 * 1e-6
-    meffP = (meffvals[:-1,1] + meffvals[1:,1])/2
+    diamScaleFactor = getAreaScaleFactor(fascicleSizes)
 
-    uaffD = (uaffvals[:-1,0] + uaffvals[1:,0])/2 * 1e-6
-    uaffP = (uaffvals[:-1,1] + uaffvals[1:,1])/2
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea_byFascicle(fascIdx,fascTypes)   
 
-    ueffD = (ueffvals[:-1,0] + ueffvals[1:,0])/2 * 1e-6
-    ueffP = (ueffvals[:-1,1] + ueffvals[1:,1])/2
-    #########
-
- 
-    maffArea = maffFrac * np.sum(maffD**2*maffP / 100)
-    meffArea = meffFrac * np.sum(meffD**2*meffP / 100)
-    uaffArea = uaffFrac * np.sum(uaffD**2*uaffP / 100)
-    ueffArea = ueffFrac * np.sum(ueffD**2*ueffP / 100)
-
-    fascicleNumber = fascicleArea[fascIdx] / (diamScaleFactor * (maffArea + meffArea + uaffArea + ueffArea)) 
+    fascicleNumber = fascicleSizes[fascIdx] / (diamScaleFactor * (maffArea + meffArea + uaffArea + ueffArea)) 
     
 #    fascicleNumber = 10000
     
-    return maffFrac, meffFrac, uaffFrac, ueffFrac, fascicleNumber
+    return fascicleNumber
 
 
 def sampleFractionHistogram(ColorX,ColorY,Colors,side,rng):
@@ -182,7 +146,9 @@ def gammaDist(x,k,theta):
     
     return 1 / (gamma(k)*theta**k) * x**(k-1)*np.exp(-x/theta)
 
-def prob(d, vals,smooth):
+def prob(d, vals):
+
+    d = d / pq.m # Removes units for compatibility reasons
     
     binSizeSamples = np.diff(d)[0]
     
@@ -198,17 +164,11 @@ def prob(d, vals,smooth):
     interpD = interp(d)
     
     interpD[np.where(interpD<0)]=0
-    
-    if smooth:
         
-        params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5])
-        
-        interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1
+    params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5],bounds=(0,np.inf)) # Fits gamma distribution to digitized data
     
-#         N = 5
-#         empiricalDiams = np.convolve(empiricalDiams, np.ones(N)/N, mode='valid')
-#         empiricalProbs = np.convolve(empiricalProbs, np.ones(N)/N, mode='valid')
-    
+    interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1 
+
                       
     return interpD * binRatio
 
@@ -217,25 +177,25 @@ def MaffProb(d, maffProb):
     
     maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
     
-    return maffProb * prob(d,maffvals,True)
+    return maffProb * prob(d,maffvals)
 
 def MeffProb(d, meffProb):
     
     meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
     
-    return meffProb * prob(d,meffvals,True)
+    return meffProb * prob(d,meffvals)
 
 def UaffProb(d, uaffProb):
     
     uaffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
     
-    return uaffProb * prob(d,uaffvals,False)
+    return uaffProb * prob(d,uaffvals)
 
 def UeffProb(d, ueffProb):
     
     ueffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
     
-    return ueffProb * prob(d,ueffvals,True)
+    return ueffProb * prob(d,ueffvals)
 
 def getFasciclePositions():
     
@@ -260,34 +220,24 @@ def getFasciclePositions():
         
     return np.array(fasciclePositions)
     
-def getFascicleTypes(iteration):
+def getFascicleTypes():
     
     fascPos = getFasciclePositions()
-    
-    nerveCenter = np.mean(fascPos,axis=0)
-    
+        
     # Selects whether fascicle should have more afferent or more efferent fibers, based on whether it is left or right (or above vs below) dividing line
     
-    if iteration == 0:
-        fascTypes = fascPos[:,0] > 8
-    elif iteration == 1:
-        fascTypes = fascPos[:,0] < 8
-    elif iteration == 2:
-        fascTypes = fascPos[:,1] > -9
-    else:
-        fascTypes = fascPos[:,1] < -9
+    fascTypes = fascPos[:,0] > 8
     
     return fascTypes
 
 def getFibersPerFascicle(fascIdx,fascTypes):
-    
-    diamScaleFactor = getAreaScaleFactor()
-        
+
     fascicleSizes = np.array([.24*.26,.16*.16,.18*.2,.16*.16,.12*.14,.16*.16,.1*.12,.24*.2,.2*.24,.18*.2,.14*.12,
                 .16*.16,.1*.08,.16*.14,.12*.12,.08*.08,.14*.12,.1*.1,.2*.18,.14*.14,.14*.12,
                 .12*.12,.22*.18,.14*.14,.14*.12,.18*.18,.16*.16,.1*.16,.12*.12,.22*.22,.1*.1,.1*.08,
                 .12*.12,.1*.1,.12*.1,.14*.1,.1*.1,.14*.12,.18*.16])*1e-3**2
+           
     
-    maffFrac, meffFrac, uaffFrac, ueffFrac, fibersPerFascicle = getNumFibers(fascicleSizes,diamScaleFactor,fascIdx,fascTypes)
+    fibersPerFascicle = getNumFibers(fascicleSizes,fascIdx,fascTypes)
     
     return fibersPerFascicle # Average value
