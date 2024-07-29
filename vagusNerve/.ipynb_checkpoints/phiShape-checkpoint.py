@@ -17,7 +17,7 @@ def removeZeroCrossings(phiShapeEmpirical):
         
         first = np.where(phiShapeEmpirical[:np.argmax(phiShapeEmpirical)]<0)[0][-1] 
 
-        phiShapeEmpirical[:first] = 0
+        phiShapeEmpirical[:first+1] = 0
 
     
     if np.any(phiShapeEmpirical[np.argmin(phiShapeEmpirical):]>0): # Does the same for the other end of the fiber

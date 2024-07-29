@@ -17,6 +17,7 @@ from scipy.signal import fftconvolve, sosfilt, butter
 from vagusNerve.nerveSetup import *
 from vagusNerve.utils import *
 from vagusNerve.phiShape import *
+from vagusNerve.runSim import *
 
 import quantities as pq
 from scipy.signal import find_peaks     

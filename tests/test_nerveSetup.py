@@ -81,4 +81,16 @@ def test_fiberTypeFractions():
 
     assert uaffFrac == 1-(maffFrac+meffFrac+ueffFrac)
 
+def test_fiberNumbers():
+
+    fascTypes = getFascicleTypes()
+
+    numbers = []
+    for i in range(39):
+        numbers.append(getFibersPerFascicle(i,fascTypes))
+
+    assert np.sum(numbers)>250000
+    assert np.sum(numbers)<375000
+    
+
     
