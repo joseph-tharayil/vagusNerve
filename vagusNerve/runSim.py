@@ -45,7 +45,7 @@ def getTime():
 
     return time
 
-def convolveToGetSignal(time, current, phi, recordingCurrent):
+def convolveToGetSignal(time, current, phi, recordingCurrent, variance=np.array([0])):
 
     aps = loadActionPotentialShapes()
 
@@ -60,10 +60,12 @@ def convolveToGetSignal(time, current, phi, recordingCurrent):
         cv = []
         
         for j in range(len(current)):
+
+            for k in range(len(variance)):
             
-            c = fftconvolve(der,phi[i,:,j],mode='same') # Convolves second derivative with exposure
-            
-            cv.append(c)
+                c = fftconvolve(der,phi[i,:,j,k],mode='same') # Convolves second derivative with exposure
+                
+                cv.append(c)
 
         cv = np.array(cv)
 
@@ -94,9 +96,9 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
 
     return scaling0, scaling1
 
-def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder):
+def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder, variance=np.array([0])):
 
-    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory) # For each of the four fiber types, returns scaling factor for each diameter
+    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, variance) # For each of the four fiber types, returns scaling factor for each diameter
 
     myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
@@ -162,13 +164,24 @@ def getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time):
 
     return [phiShapeMyelinated, phiShapeUnmyelinated]
 
-def getDistance(distanceIdx):
+def getDistance(distanceIdx, recording):
 
-    distances = [0.06,0.01]*pq.m # Stimulus-recording distance, in m
+    if 'distances' in recording.keys():
+        distances = recording['distances']*pq.m
+    else:
+        distances = [0.06,0.01]*pq.m # Stimulus-recording distance, in m
     
     distance = distances[distanceIdx]
 
     return distance
+
+def getVariance(stimulus):
+
+    if 'variance' in stimulus.keys():
+
+        variance = stimulus['variance']
+    else:
+        variance=np.array([0])
     
 def runSim(outputfolder, distanceIdx, stimulus, recording):
    
@@ -177,7 +190,7 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     current = stimulus['current'] # Current applied in finite element simulation of recruitment
     stimulusDirectory = stimulus['stimulusDirectory'] # Location of titration outputs from S4:
     
-    distance = getDistance(distanceIdx)
+    distance = getDistance(distanceIdx, recording)
 
     time = getTime()
 
@@ -190,13 +203,13 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     
     fascTypes = getFascicleTypes() # Defines whether fasicle is on left or right side of nerve  
 
-    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder)
+    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder, variance)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
         
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, outputfolder, distanceIdx)
     
-    signals = convolveToGetSignal(time, current, phi, recordingCurrent)
+    signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
 
     saveSignals(outputfolder, distanceIdx, fascIdx, signals)
     

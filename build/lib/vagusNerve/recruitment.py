@@ -92,6 +92,9 @@ def getCdf(titrationFac, fascIdx,removeJumps=True):
 
     cdfX = np.arange(1,len(midptsX)+1)/len(midptsX)
 
+    midptsX = np.insert(midptsX,0,0)
+    cdfX = np.insert(cdfX,0,0)
+
     return midptsX, cdfX
 
 

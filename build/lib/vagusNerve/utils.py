@@ -8,7 +8,7 @@ from scipy.signal import fftconvolve, butter, sosfilt
 import quantities as pq
 
 
-def Scaling(d,fiberType): # Diameter dependent scaling of signal
+def Scaling(d,fiberType): # Diameter dependent scaling of transmembrane currents
     
     if fiberType == 0: # Myelinated fiber
         resistivity_intracellular = 0.7*pq.ohm*pq.m  # ohm meters

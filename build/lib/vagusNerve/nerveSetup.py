@@ -11,37 +11,66 @@ from scipy.optimize import curve_fit
 
 import quantities as pq
 
+def loadDiameterDistribution(fiberType):
+
+    #### Loads diameter distributions
+
+    if fiberType == 'maff':
+    
+        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
+    elif fiberType == 'meff':
+        
+        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
+
+    elif fiberType == 'uaff':
+        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
+
+    elif fiberType == 'ueff':
+        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
+
+    else:
+        raise ValueError('Invalid fiber type')
+    #####
+    
+    #### Gets midpoints of histogram bins
+    binWidths = np.diff(vals[:,0]) # Width of each diameter bin, in um
+    
+    diameterBins = (vals[:-1,0] + vals[1:,0])/2 * 1e-6 # Converts from um to m
+    probabilities = (vals[:-1,1] + vals[1:,1])/2 * 0.01 # Converts from percentage to fraction
+    #######
+
+    probabilities = adjust_probabilities(probabilities, binWidths)
+
+    return diameterBins, probabilities
+
+def adjust_probabilities(probabilities, binWidths):
+
+    '''
+    Ensures that the total fiber diameter probability distribution sums to 1
+    '''
+
+    relativeBinWidths = binWidths/binWidths[0]
+
+    probabilities *= relativeBinWidths
+
+    probabilities /= np.sum(probabilities)
+
+    return probabilities
+
 
 def getFiberTypeArea(scalingFactors):
 
     ''' Gets the area occupied by each fiber type. If byFascicle==False, gets area over the nerve. Else, gets area over each fascicle'''
 
-
-    #### Loads diameter distributions
-    maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
-    meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
-    uaffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
-    ueffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
-    #####
-    
-    #### Gets midpoints of histogram bins
-    maffD = (maffvals[:-1,0] + maffvals[1:,0])/2 * 1e-6 # Converts from um to m
-    maffP = (maffvals[:-1,1] + maffvals[1:,1])/2 
-
-    meffD = (meffvals[:-1,0] + meffvals[1:,0])/2 * 1e-6 # Converts from um to m
-    meffP = (meffvals[:-1,1] + meffvals[1:,1])/2
-
-    uaffD = (uaffvals[:-1,0] + uaffvals[1:,0])/2 * 1e-6 # Converts from um to m
-    uaffP = (uaffvals[:-1,1] + uaffvals[1:,1])/2
-
-    ueffD = (ueffvals[:-1,0] + ueffvals[1:,0])/2 * 1e-6 # Converts from um to m
-    ueffP = (ueffvals[:-1,1] + ueffvals[1:,1])/2
-    #######
+    maffD, maffP = loadDiameterDistribution('maff')
+    meffD, meffP = loadDiameterDistribution('meff')
+    uaffD, uaffP = loadDiameterDistribution('uaff')
+    ueffD, ueffP = loadDiameterDistribution('ueff')
             
-    maffArea = scalingFactors[0] * np.sum(maffD**2*maffP / 100)
-    meffArea = scalingFactors[1] * np.sum(meffD**2*meffP / 100)
-    uaffArea = scalingFactors[2] * np.sum(uaffD**2*uaffP / 100)
-    ueffArea = scalingFactors[3] * np.sum(ueffD**2*ueffP / 100)
+    maffArea = scalingFactors[0] * np.sum(maffD**2*maffP)
+    meffArea = scalingFactors[1] * np.sum(meffD**2*meffP)
+    uaffArea = scalingFactors[2] * np.sum(uaffD**2*uaffP)
+    ueffArea = scalingFactors[3] * np.sum(ueffD**2*ueffP)
 
     return maffArea, meffArea, uaffArea, ueffArea
 
@@ -146,14 +175,13 @@ def gammaDist(x,k,theta):
     
     return 1 / (gamma(k)*theta**k) * x**(k-1)*np.exp(-x/theta)
 
-def prob(d, vals):
+def prob(d, fiberType):
 
     d = d / pq.m # Removes units for compatibility reasons
     
     binSizeSamples = np.diff(d)[0]
     
-    empiricalDiams = vals[:,0]*1e-6 # From um to m
-    empiricalProbs = vals[:,1]*0.01 # From percentage to fraction
+    empiricalDiams, empiricalProbs = loadDiameterDistribution(fiberType)
     
     binSizeData = np.diff(empiricalDiams)[0] # Taking the first element ignores sloppy digitization towards the far end
     
@@ -174,28 +202,26 @@ def prob(d, vals):
 
 
 def MaffProb(d, maffProb):
-    
-    maffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
-    
-    return maffProb * prob(d,maffvals)
+        
+    return maffProb * prob(d,'maff')
 
 def MeffProb(d, meffProb):
     
     meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
     
-    return meffProb * prob(d,meffvals)
+    return meffProb * prob(d,'meff')
 
 def UaffProb(d, uaffProb):
     
     uaffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
     
-    return uaffProb * prob(d,uaffvals)
+    return uaffProb * prob(d,'uaff')
 
 def UeffProb(d, ueffProb):
     
     ueffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
     
-    return ueffProb * prob(d,ueffvals)
+    return ueffProb * prob(d,'ueff')
 
 def getFasciclePositions():
     
