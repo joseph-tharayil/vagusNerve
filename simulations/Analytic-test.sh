@@ -29,8 +29,6 @@ echo $SLURM_ARRAY_TASK_ID
 rm -r $filename
 mkdir $filename
 
-
-mkdir $filename/
 mkdir $filename/diameters
 mkdir $filename/fascicles
 mkdir $filename/recruitment

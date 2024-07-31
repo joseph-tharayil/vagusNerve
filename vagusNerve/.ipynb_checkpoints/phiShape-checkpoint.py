@@ -64,13 +64,11 @@ def linearizeLeftSide(phiShapeEmpirical, cutoffPoint, slope):
 
     return phiShapeEmpirical
 
-def smoothPhiShape(phiShapeEmpirical):
+def smoothPhiShape(phiShapeEmpirical,slopeToLinearize=1e-4):
 
     phiShapeEmpirical = removeZeroCrossings(phiShapeEmpirical)
 
     ####### Makes sure that the potential at the proximal end of the fiber goes all the way to zero
-
-    slopeToLinearize = 1e-4
 
     derivative = np.diff(phiShapeEmpirical)
 
@@ -91,7 +89,7 @@ def smoothPhiShape(phiShapeEmpirical):
         
     return phiShapeEmpirical
    
-def editPhiShape(phi,distance):
+def editPhiShape(phi,distance,cutoff=1e-4):
     
     ''' 
     This function takes the recording exposure curve from S4L, shifts it to match the desired distance from stimulus to recording, and smooths it
@@ -103,14 +101,14 @@ def editPhiShape(phi,distance):
 
     phiShapeEmpirical = (phi.iloc[:,1].values-np.mean(phi.iloc[:,1]))
 
-    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical,cutoff)
 
    ######## 
     
 
     return xvals, phiShapeEmpirical*pq.V
 
-def FitPhiShape(fascIdx,distance,femDirectory):
+def FitPhiShape(fascIdx,distance,femDirectory,cutoff=1e-4):
     
     ''' 
     This function creates an interpolation object for the recording exposure
@@ -118,7 +116,7 @@ def FitPhiShape(fascIdx,distance,femDirectory):
 
     phi = pd.read_excel(femDirectory+str(fascIdx)+'_BetterConductivity.xlsx')
     
-    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance,cutoff)
 
     return interp1d(xvals,phiShapeEmpirical,bounds_error=False,fill_value=(phiShapeEmpirical[0],phiShapeEmpirical[-1]))
 

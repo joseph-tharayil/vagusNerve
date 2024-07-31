@@ -76,6 +76,10 @@ def getFiberTypeArea(scalingFactors):
 
 def getFiberTypeArea_Overall():
 
+    '''
+    Calculates area occupied by each fiber type over the entire nerve
+    '''
+
     ### Overall fiber counts in the nerve
     maffcount = 34000
     meffcount = 14800
@@ -88,6 +92,10 @@ def getFiberTypeArea_Overall():
     return maffArea, meffArea, uaffArea, ueffArea
 
 def getFiberTypeArea_byFascicle(fascIdx, fascTypes):
+
+    '''
+    Calculates area occupied by each fiber type in a given fascicle
+    '''
 
     maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
 
@@ -110,6 +118,10 @@ def getAreaScaleFactor(fascicleSizes):
     return diamScaleFactor
 
 def getNumFibers(fascicleSizes,fascIdx,fascTypes):
+
+    '''
+    Calculates total number of fibers in a given fascicle
+    '''
 
     diamScaleFactor = getAreaScaleFactor(fascicleSizes)
 
@@ -136,6 +148,10 @@ def sampleFractionHistogram(ColorX,ColorY,Colors,side,rng):
     return frac*.01 # Converts from percentage to fraction
 
 def getFiberTypeFractions(fascIdx, fascTypes):
+
+    '''
+    Finds the percentage of fibers of each type in the given fascicle, by sampling from the distribution in Figure 3 in Jayaprakash et al.
+    '''
     
     rng = np.random.default_rng(fascIdx) # Sets random seed
     
@@ -176,6 +192,10 @@ def gammaDist(x,k,theta):
     return 1 / (gamma(k)*theta**k) * x**(k-1)*np.exp(-x/theta)
 
 def prob(d, fiberType):
+
+    '''
+    Given a vector of fiber diameters d, and a particular fiber type, interpolates the fiber diameter probability distribution from the Jayaprakash paper over the vector d.
+    '''
 
     d = d / pq.m # Removes units for compatibility reasons
     
@@ -257,6 +277,10 @@ def getFascicleTypes():
     return fascTypes
 
 def getFibersPerFascicle(fascIdx,fascTypes):
+
+    '''
+    Given the size of each fascicle, calculates the total number of fibers therein
+    '''
 
     fascicleSizes = np.array([.24*.26,.16*.16,.18*.2,.16*.16,.12*.14,.16*.16,.1*.12,.24*.2,.2*.24,.18*.2,.14*.12,
                 .16*.16,.1*.08,.16*.14,.12*.12,.08*.08,.14*.12,.1*.1,.2*.18,.14*.14,.14*.12,

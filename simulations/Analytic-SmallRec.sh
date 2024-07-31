@@ -8,16 +8,10 @@
 ##SBATCH --mail-type=ALL
 #SBATCH --account=proj85
 #SBATCH --no-requeue
-#SBATCH --output=EEG_1_CoordsV.out
-#SBATCH --error=EEG_1_CoordsV.err
 #SBATCH --exclusive
 #SBATCH --mem=0
-#SBATCH --array=0-2
+#SBATCH --array=0-0
 
-module purge
-module load archive/2022-02 py-mpi4py
-
-source ~/probevenv/bin/activate
 
 filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_smallRec'
 
@@ -32,36 +26,34 @@ echo $SLURM_ARRAY_TASK_ID
 rm -r $filename
 mkdir $filename
 
+mkdir $filename/diameters
+mkdir $filename/fascicles
+mkdir $filename/recruitment
+mkdir $filename/phis
 
-mkdir $filename/0
-mkdir $filename/0/diameters
-mkdir $filename/0/fascicles
-mkdir $filename/0/recruitment
-mkdir $filename/0/phis
+mkdir $filename/phis/0
+mkdir $filename/phis/1
+mkdir $filename/phis/2
 
-mkdir $filename/0/phis/0
-mkdir $filename/0/phis/1
-mkdir $filename/0/phis/2
+mkdir $filename/maff
+mkdir $filename/maff/0
+mkdir $filename/maff/1
+mkdir $filename/maff/2
 
-mkdir $filename/0/maff
-mkdir $filename/0/maff/0
-mkdir $filename/0/maff/1
-mkdir $filename/0/maff/2
+mkdir $filename/meff
+mkdir $filename/meff/0
+mkdir $filename/meff/1
+mkdir $filename/meff/2
 
-mkdir $filename/0/meff
-mkdir $filename/0/meff/0
-mkdir $filename/0/meff/1
-mkdir $filename/0/meff/2
+mkdir $filename/uaff
+mkdir $filename/uaff/0
+mkdir $filename/uaff/1
+mkdir $filename/uaff/2
 
-mkdir $filename/0/uaff
-mkdir $filename/0/uaff/0
-mkdir $filename/0/uaff/1
-mkdir $filename/0/uaff/2
-
-mkdir $filename/0/ueff
-mkdir $filename/0/ueff/0
-mkdir $filename/0/ueff/1
-mkdir $filename/0/ueff/2
+mkdir $filename/ueff
+mkdir $filename/ueff/0
+mkdir $filename/ueff/1
+mkdir $filename/ueff/2
 
 fi
 

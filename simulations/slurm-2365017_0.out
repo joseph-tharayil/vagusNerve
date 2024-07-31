@@ -1,0 +1,607 @@
+0
+0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+    main(outputfolder,distanceIdx)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    main(outputfolder,distanceIdx)
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+IndexError: index 0 is out of bounds for axis 0 with size 0
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 31, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/analytic-Standoff-sideways-highConductivity-smallRec.py", line 22, in main
+    runSim(outputfolder, distanceIdx, stimulus, recording)
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 213, in runSim
+    phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/runSim.py", line 155, in getPhiShapes
+    phiFunc = FitPhiShape(fascIdx, distance, recordingDirectory)# Defines an interpolation function for the recording exposure for the fasicle
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 121, in FitPhiShape
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 106, in editPhiShape
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/vagusNerve/phiShape.py", line 79, in smoothPhiShape
+    first = np.where(derivative>slopeToLinearize)[0][0] # Based on derivative of function, selects point after which not to change values
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+srun: error: r2i6n10: task 10: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=2365017.0
+slurmstepd: error: *** STEP 2365017.0 ON r2i6n0 CANCELLED AT 2024-07-31T14:53:00 ***
+srun: error: r2i6n26: task 26: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r2i6n27: task 27: Exited with exit code 1
+srun: error: r2i6n17: task 17: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r2i6n21: task 21: Exited with exit code 1
+srun: error: r2i6n11: task 11: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r2i6n23: task 23: Exited with exit code 1
+srun: error: r2i6n25: task 25: Exited with exit code 1
+srun: error: r2i6n20: task 20: Exited with exit code 1
+srun: error: r2i6n24: task 24: Exited with exit code 1
+srun: error: r2i6n22: task 22: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r2i6n13: task 13: Exited with exit code 1
+srun: error: r2i6n30: task 30: Exited with exit code 1
+srun: error: r2i6n29: task 29: Exited with exit code 1
+srun: error: r2i6n31: task 31: Exited with exit code 1
+srun: error: r2i6n28: task 28: Exited with exit code 1
+srun: error: r2i6n15: task 15: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r5i1n8: task 38: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r2i6n32: task 32: Exited with exit code 1
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: error: r5i1n6: task 36: Exited with exit code 1
+srun: error: r2i6n33: task 33: Terminated
+srun: error: r2i6n35: task 35: Terminated
+srun: error: r2i6n34: task 34: Terminated
+srun: error: r5i1n7: task 37: Terminated
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+slurmstepd: error: common_file_write_content: unable to open '/sys/fs/cgroup/freezer/slurm/uid_194757/job_2365017/step_0/freezer.state' for writing: Permission denied
+srun: Force Terminated StepId=2365017.0
+srun: Warning: can't run 4 processes on 39 nodes, setting nnodes to 4
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 27, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 27, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 27, in <module>
+Traceback (most recent call last):
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 27, in <module>
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 17, in main
+    signals[typeIdx] += np.load(outputfolder+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 455, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_smallRec/meff/0/signals_10.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 17, in main
+    signals[typeIdx] += np.load(outputfolder+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 455, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_smallRec/uaff/0/signals_10.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 17, in main
+    signals[typeIdx] += np.load(outputfolder+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 455, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_smallRec/ueff/0/signals_10.npy'
+    main(outputfolder,distanceIdx)
+  File "/gpfs/bbp.cscs.ch/project/proj85/vagusPublication/simulations/combineOldMethod.py", line 17, in main
+    signals[typeIdx] += np.load(outputfolder+'/'+names[typeIdx]+'/'+str(distanceIdx)+'/signals_'+str(fascIdx)+'.npy')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/bbp.cscs.ch/home/tharayil/vagusEnv/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 455, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_smallRec/maff/0/signals_10.npy'
+srun: error: r2i6n1: task 1: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=2365017.1
+srun: error: r2i6n3: task 3: Exited with exit code 1
+srun: error: r2i6n2: task 2: Exited with exit code 1
+srun: error: r2i6n0: task 0: Exited with exit code 1

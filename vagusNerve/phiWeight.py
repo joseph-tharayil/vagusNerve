@@ -6,7 +6,7 @@ import quantities as pq
 from vagusNerve.nerveSetup import *
 from vagusNerve.recruitment import *
 
-def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, variance=0):
+def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, outputfolder=None, variance=0):
 
     '''
     For a given current level, for each fiber type calculates the scaling factor for each diameter, based on recruitment, fiber diameter distribution, and number of fibers
@@ -30,23 +30,36 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, variance=0):
     phiWeight[1][0] =  UaffProb(d,uaffProb)  * recruitment[-1] * numFibersPerFascicle
     phiWeight[1][1] =  UeffProb(d,ueffProb)  * recruitment[-1] * numFibersPerFascicle
 
-    return phiWeight
+    if outputfolder is not None:
 
-def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, variance=np.array([0])):
+        np.save(outputfolder+'/fascicles'+'/fibers'+str(fascIdx)+'.npy',numFibersPerFascicle)
+        np.save(outputfolder+'/fascicles'+'/probs'+str(fascIdx)+'.npy',[maffProb,meffProb,uaffProb,ueffProb])
+        np.save(outputfolder+'/fascicles'+'/probDist'+str(fascIdx)+'.npy',[MaffProb(d,maffProb),MeffProb(d,meffProb),UaffProb(d,maffProb),UeffProb(d,meffProb)])
+            
+
+    return phiWeight, recruitment
+
+def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, outputfolder=None, variance=np.array([0])):
 
     '''
     Iterates through current levels and, for each fiber type, returns scaling factor given by product of recruitment, fiber diameter distribution, and number of fibers
     '''
     
     phiWeight = []
+    recruitment = []
     
     for c in current:
 
         for v in variance:
         
-            p = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory, v)
+            p, rec = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory, outputfolder, v)
 
             phiWeight.append(p)
+            recruitment.append(rec)
+
+    if outputfolder is not None:
+
+        np.save(outputfolder+'/recruitment'+'/recruitment_'+str(fascIdx)+'.npy',recruitment)
         
 
     phiWeight0 = phiWeight[0][0][0][np.newaxis]

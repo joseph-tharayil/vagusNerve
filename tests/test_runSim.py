@@ -17,7 +17,8 @@ def test_getDiameterScalingOfCurrent():
 
 def test_getDistance():
 
-    d = getDistance(0)
+    recording = {}
+    d = getDistance(0,recording)
     assert d.units == pq.m
     np.testing.assert_almost_equal(d.item(),0.06)
 
@@ -30,3 +31,8 @@ def test_getDiameters():
 
     d = getDiameters()
     assert d.units == pq.m
+
+def test_getVariance():
+
+    v = getVariance({})
+    np.testing.assert_array_equal(v,np.array([0]))
