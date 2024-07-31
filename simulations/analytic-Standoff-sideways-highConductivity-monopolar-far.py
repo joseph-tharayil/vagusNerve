@@ -17,7 +17,8 @@ def main(outputfolder, distanceIdx):
 
     recording = {'recordingCurrent':452e-6,
                  'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Monopolar_Far_Corrected/',
-                 'distances': np.array([0.06,.05,0.01]) + 3 * 3e-3
+                 'distances': np.array([0.06,.05,0.01]) + 3 * 3e-3,
+                 'cutoff':5e-6
             }
 
     runSim(outputfolder, distanceIdx, stimulus, recording)

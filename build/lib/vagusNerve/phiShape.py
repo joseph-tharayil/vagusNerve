@@ -7,7 +7,7 @@ from scipy.signal import fftconvolve, butter, sosfilt
 
 import quantities as pq
 
-def removeZeroCrossings(phiShapeEmpirical):
+def removeZeroCrossings(phiShapeEmpirical, isMonopolar=False):
 
     '''
     If the phi curve crosses the zero line on the far ends of the nerve, sets the potential lateral to the zero crossing to zero
@@ -19,12 +19,21 @@ def removeZeroCrossings(phiShapeEmpirical):
 
         phiShapeEmpirical[:first+1] = 0
 
-    
-    if np.any(phiShapeEmpirical[np.argmin(phiShapeEmpirical):]>0): # Does the same for the other end of the fiber
-                
-        last = np.where(phiShapeEmpirical[np.argmin(phiShapeEmpirical):]>0)[0][0]+np.argmin(phiShapeEmpirical)
+    if isMonopolar:
+
+        if np.any(phiShapeEmpirical[np.argmax(phiShapeEmpirical):]<0): # Does the same for the other end of the fiber
+                    
+            last = np.where(phiShapeEmpirical[np.argmax(phiShapeEmpirical):]<0)[0][0]+np.argmax(phiShapeEmpirical)
         
-        phiShapeEmpirical[last:] = 0
+            phiShapeEmpirical[last:] = 0
+
+    else:
+    
+        if np.any(phiShapeEmpirical[np.argmin(phiShapeEmpirical):]>0): # Does the same for the other end of the fiber
+                    
+            last = np.where(phiShapeEmpirical[np.argmin(phiShapeEmpirical):]>0)[0][0]+np.argmin(phiShapeEmpirical)
+        
+            phiShapeEmpirical[last:] = 0
 
     return phiShapeEmpirical
 
@@ -64,9 +73,9 @@ def linearizeLeftSide(phiShapeEmpirical, cutoffPoint, slope):
 
     return phiShapeEmpirical
 
-def smoothPhiShape(phiShapeEmpirical,slopeToLinearize=1e-4):
+def smoothPhiShape(phiShapeEmpirical,slopeToLinearize=1e-4,isMonopolar=False):
 
-    phiShapeEmpirical = removeZeroCrossings(phiShapeEmpirical)
+    phiShapeEmpirical = removeZeroCrossings(phiShapeEmpirical,isMonopolar)
 
     ####### Makes sure that the potential at the proximal end of the fiber goes all the way to zero
 
@@ -89,7 +98,7 @@ def smoothPhiShape(phiShapeEmpirical,slopeToLinearize=1e-4):
         
     return phiShapeEmpirical
    
-def editPhiShape(phi,distance,cutoff=1e-4):
+def editPhiShape(phi,distance,cutoff=1e-4,isMonopolar=False):
     
     ''' 
     This function takes the recording exposure curve from S4L, shifts it to match the desired distance from stimulus to recording, and smooths it
@@ -101,7 +110,7 @@ def editPhiShape(phi,distance,cutoff=1e-4):
 
     phiShapeEmpirical = (phi.iloc[:,1].values-np.mean(phi.iloc[:,1]))
 
-    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical,cutoff)
+    phiShapeEmpirical = smoothPhiShape(phiShapeEmpirical,cutoff,isMonopolar)
 
    ######## 
     
@@ -115,8 +124,13 @@ def FitPhiShape(fascIdx,distance,femDirectory,cutoff=1e-4):
     '''
 
     phi = pd.read_excel(femDirectory+str(fascIdx)+'_BetterConductivity.xlsx')
+
+    if 'Monopolar' in femDirectory:
+        isMonopolar=True
+    else:
+        isMonopolar = False
     
-    xvals, phiShapeEmpirical = editPhiShape(phi,distance,cutoff)
+    xvals, phiShapeEmpirical = editPhiShape(phi,distance,cutoff,isMonopolar)
 
     return interp1d(xvals,phiShapeEmpirical,bounds_error=False,fill_value=(phiShapeEmpirical[0],phiShapeEmpirical[-1]))
 
