@@ -1,3 +1,5 @@
+# Apache-2.0
+
 from vagusNerve.phiWeight import *
 from vagusNerve.utils import *
 from vagusNerve.nerveSetup import *

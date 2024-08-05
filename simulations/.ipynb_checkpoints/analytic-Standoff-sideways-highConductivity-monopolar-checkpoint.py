@@ -1,3 +1,5 @@
+# Apache-2.0
+
 import numpy as np
 import pandas as pd
 
@@ -17,7 +19,7 @@ def main(outputfolder, distanceIdx):
 
     recording = {'recordingCurrent':460e-6 ,
                  'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Monopolar_Corrected/',
-                 'cutoff':5e-5
+                 'cutoff':5e-6
             }
 
     runSim(outputfolder, distanceIdx, stimulus, recording)

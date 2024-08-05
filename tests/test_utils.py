@@ -1,3 +1,5 @@
+# Apache-2.0
+
 import numpy as np
 from vagusNerve.utils import *
 import quantities as pq

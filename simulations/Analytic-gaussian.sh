@@ -12,6 +12,9 @@
 #SBATCH --mem=0
 #SBATCH --array=0
 
+# Apache-2.0
+
+
 filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_gaussian'
 
 echo $SLURM_ARRAY_TASK_ID
