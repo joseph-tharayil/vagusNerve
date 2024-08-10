@@ -19,8 +19,24 @@ Create a virtual environment by running `python -m venv vagusEnv`. Then, simply 
 The code can be tested by running `pytest tests`
 
 ## Replicating results from the paper
-Run all of the bash files in the *simulation* folder. Each bash file corresponds to a semi-analytic simulation of the eCAP, under various stimulus and recording parameters. Then run all of the cells in the notebook provided. This will generate the majority of the figures in the paper.
-Some figure panels are created in Sim4Life.
+
+### Create and run finite element models
+Open the Sim4Life model containing the 2D cross-section of the nerve, and run the appropriate script in the create_fem_simulation/extrudeMesh folder to create the 2.5D model. Then run the scripts create_fem_simulation/createPerineuria/MakePatches.py and create_fem_simulation/createPerineuria/getFascicleDiameters.py (in that order) to create the thin layers for the electrode contacts and the perineuria. Note that these scripts will only produce the 2.5D mdoels used in teh EM simulations. For the neural simulations, you must use the provided FEM file, in which a region of the fascicles corresponding to the perinueria is segmented out. This ensures that the script which generates neurons does not place any within the perineuria.
+
+For the EM simulations for recording exposure, run the scripts create_fem_simulation/extract_fem_results/create_splines_to_interpolate_over.py, then reate_fem_simulation/extract_fem_results/InterpolatePhiFasc.py. These will save the exposure function to xlsx files, which are used by the semi-analytic models
+
+For the EM simulations for stimulation, export the potential fields as a cache file. These will be used by the titration simulations.
+
+### Run neuronal titrations
+
+For the titration simulations, run the script create_fem_simulation/createNeurons/FunctionalizeNeurons_Titrate_PerineuriaExcluded.py. Then import the cache file from the previous step and run the titration.
+
+### Run semi-analytic models
+Run all of the bash files in the *simulation* folder. Each bash file corresponds to a semi-analytic simulation of the eCAP, under various stimulus and recording parameters. 
+
+### Create plots
+Running all of the cells in the notebook provided will generate the majority of the figures in the paper.
+The other figure panels are created in Sim4Life. To create these panels, open the Sim4Life finite element models for the stimulation EM simulations for the two different electrode orientiations, and run the corresponding scripts in the figure_panels_s4l folder. These will change the colors of the fascicles.
 
 # Citation
 If you use this software, we kindly ask you to cite the following publication:
