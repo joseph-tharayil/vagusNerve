@@ -5,7 +5,7 @@ import numpy as np
 import s4l_v1.model as model
 from XCore import Color
 
-rgb = np.load(r'C:/Users/tharayil/Downloads/rgb_percentActivation(1).npy')
+rgb = np.load(r'C:/Users/tharayil/Downloads/rgb_percentActivation.npy')
 
 ents = model.AllEntities()
 
