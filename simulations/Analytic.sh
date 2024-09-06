@@ -14,6 +14,8 @@
 
 # Apache-2.0
 
+source ~/vagusEnv/bin/activate
+module load unstable hpe-mpi py-mpi4py
 filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic'
 
 echo $SLURM_ARRAY_TASK_ID

@@ -1,3 +1,5 @@
+# Apache-2.0
+
 import numpy as np
 import pandas as pd
 
@@ -130,7 +132,7 @@ def Recruitment(current,diameters, fascIdx,stimulusDirectory, variance=0):
     titrationFacM = np.array(titrationFactorsMeff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
     titrationFacU = np.array(titrationFactorsUaff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
         
-    myelinated = interpolateTitrationFactors(titrationFacM, current, diameters, d0Myelinated, fascIdx,removeJumps=True)
+    myelinated = interpolateTitrationFactors(titrationFacM, current, diameters, d0Myelinated, fascIdx,removeJumps=False)
     unmyelinated = interpolateTitrationFactors(titrationFacU, current, diameters, d0Unmyelinated, fascIdx,removeJumps=False)
     
     return [myelinated,unmyelinated]
