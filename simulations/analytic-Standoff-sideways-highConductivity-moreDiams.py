@@ -21,7 +21,7 @@ def main(outputfolder, distanceIdx):
                  'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Bipolar_Corrected/'
             }
 
-    runSim(outputfolder, distanceIdx, stimulus, recording,numDimaeters=4000)
+    runSim(outputfolder, distanceIdx, stimulus, recording,numDiameters=4000)
 
 
 if __name__=="__main__":
