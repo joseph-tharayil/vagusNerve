@@ -72,7 +72,7 @@ def FitAPShape(ap,tphi): # Interpolates AP shape for a given AP
     v = ap.iloc[50:,1]
     
     ### Sets peak time to 0
-    peak = tv[np.argmax(v)]
+    peak = tv.iloc[np.argmax(v)]
     tv -= peak
 
 

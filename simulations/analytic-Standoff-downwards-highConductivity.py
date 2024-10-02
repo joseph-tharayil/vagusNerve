@@ -12,7 +12,7 @@ def main(outputfolder, distanceIdx):
 
     stimulus = {'current':np.array([500])/173,
                 'stimulusDirectory':{
-                    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationBetterConductivity_Standoff_HighConductivity_NoTime.xlsx',
+                    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationBetterConductivity_Standoff_HighConductivity.xlsx',
                     "unmyelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/Titration_BetterSundt_HighConductivity.xlsx'
                 }
                }
