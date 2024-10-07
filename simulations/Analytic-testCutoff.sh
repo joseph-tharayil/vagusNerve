@@ -16,7 +16,7 @@
 
 source ~/vagusEnv/bin/activate
 module load unstable hpe-mpi py-mpi4py
-filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic'
+filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_testCutoff'
 
 echo $SLURM_ARRAY_TASK_ID
 
@@ -62,7 +62,7 @@ fi
 
 wait
 
-srun -n 39 python analytic-Standoff-sideways-highConductivity.py $filename $SLURM_ARRAY_TASK_ID
+srun -n 39 python analytic-Standoff-sideways-highConductivity-testCutoff.py $filename $SLURM_ARRAY_TASK_ID
 wait
 srun -n 4 python combineOldMethod.py $filename $SLURM_ARRAY_TASK_ID
 

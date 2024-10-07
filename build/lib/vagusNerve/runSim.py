@@ -1,3 +1,5 @@
+# Apache-2.0
+
 import numpy as np
 import pandas as pd
 
@@ -198,7 +200,7 @@ def getPhiCutoff(recordingDirectory):
 
     return cutoff
 
-def runSim(outputfolder, distanceIdx, stimulus, recording):
+def runSim(outputfolder, distanceIdx, stimulus, recording,numDiameters=2000):
    
     fascIdx = getFascIdx()
     
@@ -212,7 +214,7 @@ def runSim(outputfolder, distanceIdx, stimulus, recording):
     recordingCurrent = recording['recordingCurrent']*pq.A # Current in the S4L recording simulation
     recordingDirectory = recording['recordingDirectory'] # Location of exported potential fields interpolated along fascicle centers
 
-    d = getDiameters() 
+    d = getDiameters(numDiameters) 
 
     velocityList = getVelocities(d) # Gets velocity for each diameter
     

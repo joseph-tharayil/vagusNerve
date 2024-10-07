@@ -17,12 +17,11 @@ def main(outputfolder, distanceIdx):
                 }
                }
 
-    recording = {'recordingCurrent':250e-6,
-                 'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Small_20240213/',
-                 'cutoff':1e-6
+    recording = {'recordingCurrent':509e-6,
+                 'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Bipolar_Corrected/'
             }
 
-    runSim(outputfolder, distanceIdx, stimulus, recording)
+    runSim(outputfolder, distanceIdx, stimulus, recording,numDiameters=4000)
 
 
 if __name__=="__main__":

@@ -1,3 +1,5 @@
+# Apache-2.0
+
 import numpy as np
 import pandas as pd
 
@@ -70,7 +72,7 @@ def FitAPShape(ap,tphi): # Interpolates AP shape for a given AP
     v = ap.iloc[50:,1]
     
     ### Sets peak time to 0
-    peak = tv[np.argmax(v)]
+    peak = tv.iloc[np.argmax(v)]
     tv -= peak
 
 
@@ -91,7 +93,7 @@ def FitAPShape(ap,tphi): # Interpolates AP shape for a given AP
          
     return V*pq.V
 
-def getDiameters():
+def getDiameters(numDiameters=2000):
     
    
     minDiam = .1
@@ -99,7 +101,7 @@ def getDiameters():
     
     maxDiam = 15 #7 + 5*iteration/30 
     
-    d = np.linspace(minDiam,maxDiam,2000)*1e-6*pq.m
+    d = np.linspace(minDiam,maxDiam,numDiameters)*1e-6*pq.m
 
     return d
 

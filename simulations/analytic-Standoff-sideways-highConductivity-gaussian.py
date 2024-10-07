@@ -10,10 +10,10 @@ from vagusNerve.runSim import runSim
 
 def main(outputfolder, distanceIdx):
 
-    stimulus = {'current':np.array([500])/28.6,
+    stimulus = {'current':np.array([500])/27.7,
                 'stimulusDirectory':{
-                    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_HighConductivity.xlsx',
-                    "unmyelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_Unmyelinated_HighConductivity.xlsx'
+                    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_BetterHighConductivity_NoTime.xlsx',
+                    "unmyelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_Unmyelinated_BetterHighConductivity.xlsx'
                 },
                 "variance":np.linspace(.1,.4,4)
                }

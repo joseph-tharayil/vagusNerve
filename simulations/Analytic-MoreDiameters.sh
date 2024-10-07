@@ -10,21 +10,13 @@
 #SBATCH --no-requeue
 #SBATCH --exclusive
 #SBATCH --mem=0
-#SBATCH --array=0-1
+#SBATCH --array=0-0
 
 # Apache-2.0
 
 source ~/vagusEnv/bin/activate
 module load unstable hpe-mpi py-mpi4py
-filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic'
-
-echo $SLURM_ARRAY_TASK_ID
-
-if [ $SLURM_ARRAY_TASK_ID -eq 0 ]
-
-then
-
-echo $SLURM_ARRAY_TASK_ID
+filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_moreDiameters'
 
 rm -r $filename
 mkdir $filename
@@ -58,11 +50,9 @@ mkdir $filename/ueff/0
 mkdir $filename/ueff/1
 mkdir $filename/ueff/2
 
-fi
-
 wait
 
-srun -n 39 python analytic-Standoff-sideways-highConductivity.py $filename $SLURM_ARRAY_TASK_ID
+srun -n 39 python analytic-Standoff-sideways-highConductivity-moreDiams.py $filename $SLURM_ARRAY_TASK_ID
 wait
 srun -n 4 python combineOldMethod.py $filename $SLURM_ARRAY_TASK_ID
 
