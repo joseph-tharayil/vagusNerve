@@ -50,10 +50,10 @@ Sim4Life project files containing the neural titration are also available on oSP
 Alternatively, if you wish to set up the simulation yourself, run the script create_fem_simulation/createNeurons/FunctionalizeNeurons_Titrate_PerineuriaExcluded.py. Then import the cache file from the previous step and run the titration.
 
 ### Run semi-analytic models
-Run all of the bash files in the *simulation* folder. Each bash file corresponds to a semi-analytic simulation of the eCAP, under various stimulus and recording parameters. 
+Run all of the bash files in the *simulation* folder. Each bash file corresponds to a semi-analytic simulation of the eCAP, under various stimulus and recording parameters. Note that you will have to change the paths in the bash files and corresponding python scripts to match the location of the input and output folders on your system.
 
 ### Create plots
-Running all of the cells in the notebook provided will generate the majority of the figures in the paper.
+Running all of the cells in the notebook provided will generate the majority of the figures in the paper. Note that you will need to change the hard-coded paths to match the location of the output folders on your system.
 The other figure panels are created in Sim4Life. To create these panels, open the Sim4Life finite element models for the stimulation EM simulations for the two different electrode orientiations, and run the corresponding scripts in the figure_panels_s4l folder. These will change the colors of the fascicles.
 
 # Citation
