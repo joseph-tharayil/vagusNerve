@@ -10,7 +10,7 @@
 #SBATCH --no-requeue
 #SBATCH --exclusive
 #SBATCH --mem=0
-#SBATCH --array=0-0
+#SBATCH --array=0-1
 
 # Apache-2.0
 

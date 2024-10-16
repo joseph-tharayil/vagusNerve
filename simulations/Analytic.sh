@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH --job-name="EEG_2_CoordsV"
 #SBATCH --partition=prod
-#SBATCH --nodes=39
+#SBATCH --nodes=20
 ##SBATCH -C clx
 #SBATCH --cpus-per-task=2
 #SBATCH --time=24:00:00
@@ -16,7 +16,7 @@
 
 source ~/vagusEnv/bin/activate
 module load unstable hpe-mpi py-mpi4py
-filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic'
+filename='/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/results/finalResults/Analytic_highAmp'
 
 echo $SLURM_ARRAY_TASK_ID
 

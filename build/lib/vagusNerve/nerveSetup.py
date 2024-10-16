@@ -220,7 +220,7 @@ def prob(d, fiberType):
     interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1 
 
                       
-    return interpD * binRatio
+    return (interpD * binRatio)/np.sum((interpD * binRatio).magnitude)
 
 
 def MaffProb(d, maffProb):
