@@ -58,7 +58,7 @@ The other figure panels are created in Sim4Life. To create these panels, open th
 
 # Citation
 If you use this software, we kindly ask you to cite the following publication:
-Tharayil et al. Simulation Insights on the Compound Action Potential. *bioRxiv, (2024)*
+[Tharayil et al. Simulation Insights on the Compound Action Potential. *bioRxiv, (2024)*](https://www.biorxiv.org/content/10.1101/2024.10.16.618681v1.abstract)
 
 # Acknowledgment
 The development of this software was supported by funding to the Blue Brain Project, a research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss government's ETH Board of the Swiss Federal Institutes of Technology.
