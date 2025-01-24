@@ -18,7 +18,6 @@ setup(
     'ipython',
     'matplotlib',
     'ipympl',
-    'mpi4py',
     'quantities',
     'openpyxl',
     'pytest',
