@@ -115,7 +115,6 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fas
 
     phi = phi0+phi1
 
-
     return phi
 
 def getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff=1e-4):

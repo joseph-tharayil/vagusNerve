@@ -51,11 +51,8 @@ def loadTitrationFactors(stimulusDirectory,variance=0):
 
     titrationFactorsMeff += np.random.normal(0,variance*titrationFactorsMeff.astype(float))
 
-    titrationFactorsUaff = sortTitrationSpace(pd.read_excel(stimulusDirectory['unmyelinated'],index_col=0)).iloc[-1].values
 
-    titrationFactorsUaff += np.random.normal(0,variance*titrationFactorsUaff.astype(float))
-
-    return titrationFactorsMeff, titrationFactorsUaff
+    return titrationFactorsMeff
 
 def removeDuplicates(midptsX):
 
@@ -126,11 +123,10 @@ def Recruitment(current,diameters, fascIdx,stimulusDirectory, variance=0):
     d0Myelinated = 4e-6*pq.m # Myelinated diameter used in Sim4Life simulations
     d0Unmyelinated = 0.8e-6*pq.m # Unmyelinated diameter used in Sim4Life simulations
 
-    titrationFactorsMeff, titrationFactorsUaff = loadTitrationFactors(stimulusDirectory, variance)
+    titrationFactorsMeff = loadTitrationFactors(stimulusDirectory, variance)
 
 
     titrationFacM = np.array(titrationFactorsMeff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
-    titrationFacU = np.array(titrationFactorsUaff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
 
     myelinated = interpolateTitrationFactors(titrationFacM, current, diameters, d0Myelinated, fascIdx,removeJumps=False)
 
