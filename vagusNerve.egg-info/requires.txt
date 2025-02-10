@@ -10,4 +10,3 @@ quantities
 openpyxl
 pytest
 pytest-cov
-quantities
