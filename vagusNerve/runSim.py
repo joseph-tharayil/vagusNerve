@@ -25,10 +25,10 @@ def loadActionPotentialShapes():
 
 def getTime():
 
-    nx=500000
+    nx=50000
 
-    tmin=-3 # In s
-    tmax=3 # In s
+    tmin=-.5 # In s
+    tmax=.5 # In s
     time=np.arange(tmin,tmax,(tmax-tmin)/(nx-1))*pq.s
 
     return time
