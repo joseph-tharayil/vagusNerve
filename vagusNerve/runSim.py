@@ -25,10 +25,10 @@ def loadActionPotentialShapes():
 
 def getTime():
 
-    nx=500000
+    nx=50000
 
-    tmin=-3 # In s
-    tmax=3 # In s
+    tmin=-.5 # In s
+    tmax=.5 # In s
     time=np.arange(tmin,tmax,(tmax-tmin)/(nx-1))*pq.s
 
     return time
@@ -39,24 +39,24 @@ def convolveToGetSignal(time, current, phi, recordingCurrent, variance=np.array(
 
     Vs = getVs(aps,time) # Interpolates action potential shape in time
 
+    V = Vs[0]
+
     signals = []
 
-    for i, V in enumerate(Vs):
+    der = np.diff(V,n=2)/((time[1]-time[0])**2) # Second derivative of action potential shape
 
-        der = np.diff(V,n=2)/((time[1]-time[0])**2) # Second derivative of action potential shape
+    cv = []
 
-        cv = []
-
-        for j in range(np.max( (len(current),len(variance)) )):
+    for j in range(np.max( (len(current),len(variance)) )):
 
 
-            c = fftconvolve(der,phi[i,:,j],mode='same') # Convolves second derivative with exposure
+        c = fftconvolve(der,phi[:,j],mode='same') # Convolves second derivative with exposure
 
-            cv.append(c)
+        cv.append(c)
 
-        cv = np.array(cv)
+    cv = np.array(cv)
 
-        signals.append(cv)
+    signals.append(cv)
 
     signals = np.array(signals)
 
@@ -79,51 +79,42 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
     '''
 
     scaling0 = Scaling(d,0)* (time[1]-time[0])/velocityList[0]
-    scaling1 = Scaling(d,1)* (time[1]-time[0])/velocityList[1]
 
-    return scaling0, scaling1
+    return scaling0
 
 def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance=np.array([0])):
 
-    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, distribution_params, variance) # For each of the four fiber types, returns scaling factor for each diameter
+    phiWeightMaff, phiWeightMeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, distribution_params, variance) # For each of the four fiber types, returns scaling factor for each diameter
 
-    myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
+    myelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
     myelinatedCurrentScaling = myelinatedCurrentScaling.magnitude
-    unmyelinatedCurrentScaling = unmyelinatedCurrentScaling.magnitude
 
     phiWeightMaff = phiWeightMaff.magnitude
     phiWeightMeff = phiWeightMeff.magnitude
-    phiWeightUaff = phiWeightUaff.magnitude
-    phiWeightUeff = phiWeightUeff.magnitude
+
 
     maffscaling = phiWeightMaff.T * myelinatedCurrentScaling[:,np.newaxis]
     meffscaling = phiWeightMeff.T * myelinatedCurrentScaling[:,np.newaxis]
-    uaffscaling = phiWeightUaff.T * unmyelinatedCurrentScaling[:,np.newaxis]
-    ueffscaling = phiWeightUeff.T * unmyelinatedCurrentScaling[:,np.newaxis]
 
 
-    return [maffscaling, meffscaling, uaffscaling, ueffscaling]
+    return [maffscaling, meffscaling]
 
 def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx):
 
-    phi = [0,0,0,0]
 
 
     phiShapeMyelinated = phiShapesByType
 
-    maffScaling, meffScaling, uaffScaling, ueffScaling = scalingFactorsByType
+    maffScaling, meffScaling = scalingFactorsByType
 
 
-    phi[0] += phiShapeMyelinated.T @ maffScaling
+    phi0 += phiShapeMyelinated.T @ maffScaling
 
-    phi[1] += phiShapeMyelinated.T @ meffScaling
+    phi1 += phiShapeMyelinated.T @ meffScaling
 
-    phi[2] += phiShapeUnmyelinated.T @ uaffScaling
 
-    phi[3] += phiShapeUnmyelinated.T @ ueffScaling
-
-    phi = np.array(phi)
+    phi = np.array(phi0+phi1)
 
     return phi
 
