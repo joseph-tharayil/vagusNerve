@@ -41,22 +41,23 @@ def convolveToGetSignal(time, current, phi, recordingCurrent, variance=np.array(
 
     signals = []
 
-    for i, V in enumerate(Vs):
+    V = Vs[0]
 
-        der = np.diff(V,n=2)/((time[1]-time[0])**2) # Second derivative of action potential shape
 
+    der = np.diff(V,n=2)/((time[1]-time[0])**2) # Second derivative of action potential shape
+
+    cv = []
+
+    for j in range(np.max( (len(current),len(variance)) )):
         cv = []
 
-        for j in range(np.max( (len(current),len(variance)) )):
+        c = fftconvolve(der,phi[:,j],mode='same') # Convolves second derivative with exposure
 
+        cv.append(c)
 
-            c = fftconvolve(der,phi[i,:,j],mode='same') # Convolves second derivative with exposure
+    cv = np.array(cv)
 
-            cv.append(c)
-
-        cv = np.array(cv)
-
-        signals.append(cv)
+    signals.append(cv)
 
     signals = np.array(signals)
 
@@ -102,28 +103,20 @@ def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, vel
     uaffscaling = phiWeightUaff.T * unmyelinatedCurrentScaling[:,np.newaxis]
     ueffscaling = phiWeightUeff.T * unmyelinatedCurrentScaling[:,np.newaxis]
 
-
     return [maffscaling, meffscaling, uaffscaling, ueffscaling]
 
 def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx):
-
-    phi = [0,0,0,0]
-
 
     phiShapeMyelinated = phiShapesByType
 
     maffScaling, meffScaling, uaffScaling, ueffScaling = scalingFactorsByType
 
+    phi0 = phiShapeMyelinated.T @ maffScaling
 
-    phi[0] += phiShapeMyelinated.T @ maffScaling
+    phi1 = phiShapeMyelinated.T @ meffScaling
 
-    phi[1] += phiShapeMyelinated.T @ meffScaling
+    phi = phi0+phi1
 
-    phi[2] += phiShapeUnmyelinated.T @ uaffScaling
-
-    phi[3] += phiShapeUnmyelinated.T @ ueffScaling
-
-    phi = np.array(phi)
 
     return phi
 
@@ -171,9 +164,8 @@ def getPhiCutoff(recordingDirectory):
 
     return cutoff
 
-def runSim(distanceIdx, stimulus, recording, fascIdx, distribution_params, numDiameters=2000):
+def runSim(outputfolder, distanceIdx, stimulus, recording, fascIdx, numDiameters=2000):
 
-    distribution_params = distribution_params[fascIdx]
 
     current = stimulus['current'] # Current applied in finite element simulation of recruitment
     stimulusDirectory = stimulus['stimulusDirectory'] # Location of titration outputs from S4:
@@ -196,13 +188,15 @@ def runSim(distanceIdx, stimulus, recording, fascIdx, distribution_params, numDi
     if len(variance) > 1 and len(current)>1:
         raise AssertionError('Either variance or current must be constant')
 
-    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance)
+    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder, variance)
+
 
     cutoff = getPhiCutoff(recording)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff)
 
-    phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
+    phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, outputfolder, distanceIdx, fascIdx)
+
 
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
 
