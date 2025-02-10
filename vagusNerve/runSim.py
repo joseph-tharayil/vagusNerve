@@ -86,7 +86,7 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
 
 def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, variance=np.array([0])):
 
-    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, variance) # For each of the four fiber types, returns scaling factor for each diameter
+    phiWeightMaff, phiWeightMeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, variance) # For each of the four fiber types, returns scaling factor for each diameter
 
     myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
@@ -95,21 +95,19 @@ def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, vel
 
     phiWeightMaff = phiWeightMaff.magnitude
     phiWeightMeff = phiWeightMeff.magnitude
-    phiWeightUaff = phiWeightUaff.magnitude
-    phiWeightUeff = phiWeightUeff.magnitude
+
 
     maffscaling = phiWeightMaff.T * myelinatedCurrentScaling[:,np.newaxis]
     meffscaling = phiWeightMeff.T * myelinatedCurrentScaling[:,np.newaxis]
-    uaffscaling = phiWeightUaff.T * unmyelinatedCurrentScaling[:,np.newaxis]
-    ueffscaling = phiWeightUeff.T * unmyelinatedCurrentScaling[:,np.newaxis]
 
-    return [maffscaling, meffscaling, uaffscaling, ueffscaling]
+
+    return [maffscaling, meffscaling]
 
 def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx):
 
     phiShapeMyelinated = phiShapesByType
 
-    maffScaling, meffScaling, uaffScaling, ueffScaling = scalingFactorsByType
+    maffScaling, meffScaling = scalingFactorsByType
 
     phi0 = phiShapeMyelinated.T @ maffScaling
 
