@@ -84,9 +84,9 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
 
     return scaling0, scaling1
 
-def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance=np.array([0])):
+def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, variance=np.array([0])):
 
-    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, distribution_params, variance) # For each of the four fiber types, returns scaling factor for each diameter
+    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, variance) # For each of the four fiber types, returns scaling factor for each diameter
 
     myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
@@ -189,14 +189,14 @@ def runSim(fascIdx,stimulus=None,recording=None,numDiameters=2000):
     if len(variance) > 1 and len(current)>1:
         raise AssertionError('Either variance or current must be constant')
 
-    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, outputfolder, variance)
+    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, variance)
 
 
     cutoff = getPhiCutoff(recording)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff)
 
-    phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, outputfolder, distanceIdx, fascIdx)
+    phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
 
 
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)

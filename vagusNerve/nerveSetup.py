@@ -93,13 +93,13 @@ def getFiberTypeArea_Overall():
 
     return maffArea, meffArea, uaffArea, ueffArea
 
-def getFiberTypeArea_byFascicle(fascIdx, fascTypes, distribution_params):
+def getFiberTypeArea_byFascicle(fascIdx, fascTypes):
 
     '''
     Calculates area occupied by each fiber type in a given fascicle
     '''
 
-    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes,distribution_params)
+    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx,fascTypes)
 
     maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea([maffFrac, meffFrac, uaffFrac, ueffFrac])
 
@@ -119,7 +119,7 @@ def getAreaScaleFactor(fascicleSizes):
 
     return diamScaleFactor
 
-def getNumFibers(fascicleSizes,fascIdx,fascTypes,distribution_params):
+def getNumFibers(fascicleSizes,fascIdx,fascTypes):
 
     '''
     Calculates total number of fibers in a given fascicle
@@ -127,7 +127,7 @@ def getNumFibers(fascicleSizes,fascIdx,fascTypes,distribution_params):
 
     diamScaleFactor = getAreaScaleFactor(fascicleSizes)
 
-    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea_byFascicle(fascIdx,fascTypes,distribution_params)
+    maffArea, meffArea, uaffArea, ueffArea = getFiberTypeArea_byFascicle(fascIdx,fascTypes)
 
     fascicleNumber = fascicleSizes[fascIdx] / (diamScaleFactor * (maffArea + meffArea + uaffArea + ueffArea))
 
@@ -149,7 +149,7 @@ def sampleFractionHistogram(ColorX,ColorY,Colors,side,rng):
 
     return frac*.01 # Converts from percentage to fraction
 
-def getFiberTypeFractions(fascIdx, fascTypes, distribution_params):
+def getFiberTypeFractions(fascIdx, fascTypes):
 
     '''
     Finds the percentage of fibers of each type in the given fascicle, by sampling from the distribution in Figure 3 in Jayaprakash et al.
@@ -181,7 +181,7 @@ def getFiberTypeFractions(fascIdx, fascTypes, distribution_params):
     else:
         side = 1
 
-    maffFrac = distribution_params * 0.01
+    maffFrac = sampleFractionHistogram(maffColorX,meffColorY,meffColors,side,rng)
     meffFrac = sampleFractionHistogram(meffColorX,meffColorY,meffColors,side,rng)
     ueffFrac = sampleFractionHistogram(ueffColorX,ueffColorY,ueffColors,side,rng)
 
@@ -278,7 +278,7 @@ def getFascicleTypes():
 
     return fascTypes
 
-def getFibersPerFascicle(fascIdx,fascTypes,distribution_params):
+def getFibersPerFascicle(fascIdx,fascTypes):
 
     '''
     Given the size of each fascicle, calculates the total number of fibers therein
@@ -290,6 +290,6 @@ def getFibersPerFascicle(fascIdx,fascTypes,distribution_params):
                 .12*.12,.1*.1,.12*.1,.14*.1,.1*.1,.14*.12,.18*.16])*1e-3**2
 
 
-    fibersPerFascicle = getNumFibers(fascicleSizes,fascIdx,fascTypes,distribution_params)
+    fibersPerFascicle = getNumFibers(fascicleSizes,fascIdx,fascTypes)
 
     return fibersPerFascicle # Average value
