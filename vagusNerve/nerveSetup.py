@@ -19,16 +19,16 @@ def loadDiameterDistribution(fiberType):
 
     if fiberType == 'maff':
 
-        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/maffvals.csv',delimiter=',')
+        vals = np.loadtxt(r'D:\vagusOptimization\Data\maffvals.csv',delimiter=',')
     elif fiberType == 'meff':
 
-        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
+        vals = np.loadtxt(r'D:\vagusOptimization\Data\meffvalsSmooth.csv',delimiter=',')
 
     elif fiberType == 'uaff':
-        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
+        vals = np.loadtxt(r'D:\vagusOptimization\Data\uaffvals.csv',delimiter=',')
 
     elif fiberType == 'ueff':
-        vals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
+        vals = np.loadtxt(r'D:\vagusOptimization\Data\ueffvals.csv',delimiter=',')
 
     else:
         raise ValueError('Invalid fiber type')
@@ -229,19 +229,19 @@ def MaffProb(d, maffProb):
 
 def MeffProb(d, meffProb):
 
-    meffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/meffvalsSmooth.csv',delimiter=',')
+    meffvals = np.loadtxt(r'D:\vagusOptimization\Data\meffvalsSmooth.csv',delimiter=',')
 
     return meffProb * prob(d,'meff')
 
 def UaffProb(d, uaffProb):
 
-    uaffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/uaffvals.csv',delimiter=',')
+    uaffvals = np.loadtxt(r'D:\vagusOptimization\Data\uaffvals.csv',delimiter=',')
 
     return uaffProb * prob(d,'uaff')
 
 def UeffProb(d, ueffProb):
 
-    ueffvals = np.loadtxt('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/ueffvals.csv',delimiter=',')
+    ueffvals = np.loadtxt(r'D:\vagusOptimization\Data\ueffvals.csv',delimiter=',')
 
     return ueffProb * prob(d,'ueff')
 
@@ -253,7 +253,7 @@ def getFasciclePositions():
 
     fasciclePositions = []
 
-    positions = np.load('/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/fiberPositions1950.npy',allow_pickle=True)
+    positions = np.load(r'D:\vagusOptimization\Data\fiberPositions1950.npy',allow_pickle=True)
 
     pos = positions[0][1]
 
