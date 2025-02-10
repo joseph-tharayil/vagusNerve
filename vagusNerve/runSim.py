@@ -164,8 +164,9 @@ def getPhiCutoff(recordingDirectory):
 
     return cutoff
 
-def runSim(outputfolder, distanceIdx, stimulus, recording, fascIdx, numDiameters=2000):
+def runSim(fascIdx,stimulus=None,recording=None,numDiameters=2000):
 
+    distanceIdx = 0
 
     current = stimulus['current'] # Current applied in finite element simulation of recruitment
     stimulusDirectory = stimulus['stimulusDirectory'] # Location of titration outputs from S4:
