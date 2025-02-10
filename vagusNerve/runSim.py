@@ -15,8 +15,8 @@ from vagusNerve.phiShape import *
 def loadActionPotentialShapes():
 
     ### Loads action potential shapes in time
-    ap = pd.read_excel('../../Data/APShape20.xlsx') # Rat
-    ap2 = pd.read_excel('../../Data/APShapePoint8.xlsx') # Sundt
+    ap = pd.read_excel(r'D:\vagusOptimization\Data\APShape20.xlsx') # Rat
+    ap2 = pd.read_excel(r'D:\vagusOptimization\Data\APShapePoint8.xlsx') # Sundt
     ####
 
     aps = [ap,ap2]
