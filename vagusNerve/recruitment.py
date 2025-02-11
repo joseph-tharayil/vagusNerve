@@ -122,11 +122,10 @@ def Recruitment(current,diameters, fascIdx,stimulusDirectory, variance=0):
     d0Myelinated = 4e-6*pq.m # Myelinated diameter used in Sim4Life simulations
     d0Unmyelinated = 0.8e-6*pq.m # Unmyelinated diameter used in Sim4Life simulations
 
-    titrationFactorsMeff, titrationFactorsUaff = loadTitrationFactors(stimulusDirectory, variance)
+    titrationFactorsMeff = loadTitrationFactors(stimulusDirectory, variance)
 
 
     titrationFacM = np.array(titrationFactorsMeff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
-    titrationFacU = np.array(titrationFactorsUaff[fascIdx*50:(fascIdx+1)*50]) # Selects fibers in fascicle
 
     myelinated = interpolateTitrationFactors(titrationFacM, current, diameters, d0Myelinated, fascIdx,removeJumps=False)
 
