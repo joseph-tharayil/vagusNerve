@@ -1,4 +1,6 @@
 README.md
+authors.txt
+license.txt
 setup.py
 tests/test_SFAP.py
 tests/test_nerveSetup.py
