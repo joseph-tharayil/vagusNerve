@@ -109,9 +109,9 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fas
     maffScaling, meffScaling = scalingFactorsByType
 
 
-    phi0 += phiShapeMyelinated.T @ maffScaling
+    phi0 = phiShapeMyelinated.T @ maffScaling
 
-    phi1 += phiShapeMyelinated.T @ meffScaling
+    phi1 = phiShapeMyelinated.T @ meffScaling
 
 
     phi = np.array(phi0+phi1)
