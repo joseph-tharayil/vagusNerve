@@ -11,6 +11,7 @@ from vagusNerve.utils import *
 from vagusNerve.nerveSetup import *
 from vagusNerve.phiShape import *
 
+import time as tm
 
 def loadActionPotentialShapes():
 
@@ -186,18 +187,18 @@ def runSim(distanceIdx, stimulus, recording, fascIdx, distribution_params, numDi
         raise AssertionError('Either variance or current must be constant')
 
     
-    print("Prelims take " +str(time.time()-t))
+    print("Prelims take " +str(tm.time()-t))
  
     scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance)
     
-    print("Getting scaling factors in "+str(time.time()-t))
+    print("Getting scaling factors in "+str(tm.time()-t))
     cutoff = getPhiCutoff(recording)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff)
 
-    print('PhiShapes in '+str(time.time()-t))
+    print('PhiShapes in '+str(tm.time()-t))
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
-    print("Exposure functions in "+str(time.time()-t))
+    print("Exposure functions in "+str(tm.time()-t))
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
-    print("Convolution in "+str(time.time()-t))
+    print("Convolution in "+str(tm.time()-t))
     return signals
