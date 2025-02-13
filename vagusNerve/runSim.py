@@ -185,14 +185,19 @@ def runSim(distanceIdx, stimulus, recording, fascIdx, distribution_params, numDi
     if len(variance) > 1 and len(current)>1:
         raise AssertionError('Either variance or current must be constant')
 
+    
+    print("Prelims take " +str(time.time()-t))
+ 
     scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance)
-
+    
+    print("Getting scaling factors in "+str(time.time()-t))
     cutoff = getPhiCutoff(recording)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff)
 
+    print('PhiShapes in '+str(time.time()-t))
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
-
+    print("Exposure functions in "+str(time.time()-t))
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
-
+    print("Convolution in "+str(time.time()-t))
     return signals
