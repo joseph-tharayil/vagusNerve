@@ -48,12 +48,14 @@ def convolveToGetSignal(time, current, phi, recordingCurrent, variance=np.array(
 
     cv = []
 
-    for j in range(np.max( (len(current),len(variance)) )):
+    for i in range(phi.shape[0]):
+
+        for j in range(np.max( (len(current),len(variance)) )):
 
 
-        c = fftconvolve(der,phi[:,j],mode='same') # Convolves second derivative with exposure
+            c = fftconvolve(der,phi[i,:,j],mode='same') # Convolves second derivative with exposure
 
-        cv.append(c)
+            cv.append(c)
 
     cv = np.array(cv)
 
@@ -115,7 +117,7 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fas
     phi1 = phiShapeMyelinated.T @ meffScaling
 
 
-    phi = np.array(phi0+phi1)
+    phi = np.array([phi0,phi1])
 
     return phi
 
@@ -187,20 +189,13 @@ def runSim(distanceIdx, stimulus, recording, fascIdx, distribution_params, numDi
 
     if len(variance) > 1 and len(current)>1:
         raise AssertionError('Either variance or current must be constant')
-
     
-    print("Prelims take " +str(tm.time()-t))
- 
     scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance)
     
-    print("Getting scaling factors in "+str(tm.time()-t))
     cutoff = getPhiCutoff(recording)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff)
 
-    print('PhiShapes in '+str(tm.time()-t))
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
-    print("Exposure functions in "+str(tm.time()-t))
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
-    print("Convolution in "+str(tm.time()-t))
     return signals
