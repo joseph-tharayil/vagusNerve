@@ -21,7 +21,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes, distribution_params)
 
-    numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes,distribution_params)
+    numFibersPerFascicle = 8500 #getFibersPerFascicle(fascIdx,fascTypes,distribution_params)
 
 
 ##### Weight is given by the product of the recruitment curve and the diameter probability curve
