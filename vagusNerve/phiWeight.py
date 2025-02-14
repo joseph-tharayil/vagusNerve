@@ -21,6 +21,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes, distribution_params)
 
+    #print(maffProb)
     numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes,distribution_params)
 
 
