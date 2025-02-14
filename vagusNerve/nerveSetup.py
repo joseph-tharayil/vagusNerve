@@ -244,7 +244,7 @@ def MeffProb(d, meffProb,distribution_params):
 
     meffvals = np.loadtxt(r'D:\vagusOptimization\Data\meffvalsSmooth.csv',delimiter=',')
 
-    return meffProb * prob(d,'meff',distribution_params['maff']['diameterParams'])
+    return meffProb * prob(d,'meff',distribution_params['meff']['diameterParams'])
 
 def UaffProb(d, uaffProb):
 
