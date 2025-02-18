@@ -236,15 +236,24 @@ def prob(d, fiberType,diameter_params=None):
     return (interpD * binRatio)/np.sum((interpD * binRatio).magnitude)
 
 
-def MaffProb(d, maffProb,distribution_params):
+def MaffProb(d, maffProb,distribution_params,fascIdx=None):
 
-    return maffProb * prob(d,'maff',distribution_params['maff']['diameterParams'])
+    if fascIdx is not None and len(distribution_params['maff']['diameterParams'])>1:
+        distributionParams = distribution_params['maff']['diameterParams'][fascIdx]
+    else:
+         distributionParams = distribution_params['maff']['diameterParams']
 
-def MeffProb(d, meffProb,distribution_params):
+    return maffProb * prob(d,'maff',distributionParams)
 
-    meffvals = np.loadtxt(r'D:\vagusOptimization\Data\meffvalsSmooth.csv',delimiter=',')
+def MeffProb(d, meffProb,distribution_params,fascIdx=None):
 
-    return meffProb * prob(d,'meff',distribution_params['maff']['diameterParams'])
+
+    if fascIdx is not None and len(distribution_params['meff']['diameterParams'])>1:
+        distributionParams = distribution_params['meff']['diameterParams'][fascIdx]
+    else:
+        distributionParams = distribution_params['meff']['diameterParams']
+
+    return meffProb * prob(d,'meff',distributionParams)
 
 def UaffProb(d, uaffProb):
 
