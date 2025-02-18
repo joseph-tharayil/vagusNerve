@@ -48,7 +48,7 @@ def convolveToGetSignal(time, current, phi, recordingCurrent, variance=np.array(
 
     cv = []
 
-    for i in range(phi.shape[0]):
+    for i in range(1):
 
         for j in range(np.max( (len(current),len(variance)) )):
 
@@ -114,7 +114,7 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fas
 
     phi0 = phiShapeMyelinated.T @ maffScaling
 
-    phi1 = phiShapeMyelinated.T @ meffScaling
+    phi1 = np.zeros_like(phi0)#phiShapeMyelinated.T @ meffScaling
 
 
     phi = np.array([phi0,phi1])
