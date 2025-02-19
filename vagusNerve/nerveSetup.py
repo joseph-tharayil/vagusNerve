@@ -237,21 +237,26 @@ def prob(d, fiberType,diameter_params=None):
 
 
 def MaffProb(d, maffProb,distribution_params,fascIdx=None):
-
-    if fascIdx is not None and len(distribution_params['maff']['diameterParams'])>1:
-        distributionParams = distribution_params['maff']['diameterParams'][fascIdx]
+    
+    if distribution_params['maff']['diameterParams'] is not None:
+        if fascIdx is not None and len(distribution_params['maff']['diameterParams'])>1:
+            distributionParams = distribution_params['maff']['diameterParams'][fascIdx]
+        else:
+            distributionParams = distribution_params['maff']['diameterParams']
     else:
-         distributionParams = distribution_params['maff']['diameterParams']
+         distributionParams = None
 
     return maffProb * prob(d,'maff',distributionParams)
 
 def MeffProb(d, meffProb,distribution_params,fascIdx=None):
 
-
-    if fascIdx is not None and len(distribution_params['meff']['diameterParams'])>1:
-        distributionParams = distribution_params['meff']['diameterParams'][fascIdx]
+    if distribution_params['meff']['diameterParams'] is not None:
+        if fascIdx is not None and len(distribution_params['meff']['diameterParams'])>1:
+            distributionParams = distribution_params['meff']['diameterParams'][fascIdx]
+        else:
+            distributionParams = distribution_params['meff']['diameterParams']
     else:
-        distributionParams = distribution_params['meff']['diameterParams']
+        distributionParams = None
 
     return meffProb * prob(d,'meff',distributionParams)
 
