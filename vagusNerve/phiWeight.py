@@ -21,6 +21,8 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes, distribution_params)
 
+    np.save(r'D:\vagusOptimization\optimizeFractions_sweep\groundTruth\fiberProbs_'+str(fascIdx)+'.npy',[maffProb,meffProb])
+
     numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes,distribution_params)
 
 
