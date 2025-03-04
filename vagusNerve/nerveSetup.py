@@ -266,7 +266,7 @@ def getFasciclePositions():
 
     fasciclePositions = []
 
-    positions = np.load(r'D:\vagusOptimization\Data\fiberPositions1950.npy',allow_pickle=True)
+    positions = np.load('../Data/fiberPositions1950.npy',allow_pickle=True)
 
     pos = positions[0][1]
 
