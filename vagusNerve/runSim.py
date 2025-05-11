@@ -200,6 +200,8 @@ def runSim(distanceIdx, stimulus, recording, fascIdx, distribution_params, numDi
 
 #    print('PhiShapes in '+str(tm.time()-t))
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
+
+    print(phi.shape)
 #    print("Exposure functions in "+str(tm.time()-t))
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
 #    print("Convolution in "+str(tm.time()-t))
