@@ -181,8 +181,16 @@ def getFiberTypeFractions(fascIdx, fascTypes):
     else:
         side = 1
 
-    maffFrac = sampleFractionHistogram(maffColorX,meffColorY,meffColors,side,rng)
-    meffFrac = sampleFractionHistogram(meffColorX,meffColorY,meffColors,side,rng)
+    if distribution_params['maff']['fiberTypeFractions'] is None:
+        maffFrac = sampleFractionHistogram(maffColorX, maffColorY, maffColors, side, rng)
+    else:
+        maffFrac = distribution_params['maff']['fiberTypeFractions'][fascIdx] * 0.01
+
+    if distribution_params['meff']['fiberTypeFractions'] is None:
+        meffFrac = sampleFractionHistogram(meffColorX, meffColorY, meffColors, side, rng)
+    else:
+        meffFrac = distribution_params['meff']['fiberTypeFractions'][fascIdx] * 0.01
+
     ueffFrac = sampleFractionHistogram(ueffColorX,ueffColorY,ueffColors,side,rng)
 
     uaffFrac = 1-(maffFrac+meffFrac+ueffFrac)
@@ -193,7 +201,7 @@ def gammaDist(x,k,theta):
 
     return 1 / (gamma(k)*theta**k) * x**(k-1)*np.exp(-x/theta)
 
-def prob(d, fiberType):
+def prob(d, fiberType,diameter_params=None):
 
     '''
     Given a vector of fiber diameters d, and a particular fiber type, interpolates the fiber diameter probability distribution from the Jayaprakash paper over the vector d.
@@ -215,7 +223,12 @@ def prob(d, fiberType):
 
     interpD[np.where(interpD<0)]=0
 
-    params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5],bounds=(0,np.inf)) # Fits gamma distribution to digitized data
+    if diameter_params is None:
+
+        params = curve_fit(gammaDist,d*1e6,interpD*10,p0=[9,0.5],bounds=(0,np.inf)) # Fits gamma distribution to digitized data
+
+    else:
+        params = [[diameter_params[0],diameter_params[1]]]
 
     interpD = gammaDist(d*1e6,params[0][0],params[0][1]) * 0.1
 
@@ -223,15 +236,30 @@ def prob(d, fiberType):
     return (interpD * binRatio)/np.sum((interpD * binRatio).magnitude)
 
 
-def MaffProb(d, maffProb):
+def MaffProb(d, maffProb,distribution_params,fascIdx=None):
+    
+    if distribution_params['maff']['diameterParams'] is not None:
+        if fascIdx is not None and len(distribution_params['maff']['diameterParams'])>1:
+            distributionParams = distribution_params['maff']['diameterParams'][fascIdx]
+        else:
+            distributionParams = distribution_params['maff']['diameterParams']
+    else:
+         distributionParams = None
 
-    return maffProb * prob(d,'maff')
+    return maffProb * prob(d,'maff',distributionParams)
 
-def MeffProb(d, meffProb):
+def MeffProb(d, meffProb,distribution_params,fascIdx=None):
 
-    meffvals = np.loadtxt(r'D:\vagusOptimization\Data\meffvalsSmooth.csv',delimiter=',')
 
-    return meffProb * prob(d,'meff')
+    if distribution_params['meff']['diameterParams'] is not None:
+        if fascIdx is not None and len(distribution_params['meff']['diameterParams'])>1:
+            distributionParams = distribution_params['meff']['diameterParams'][fascIdx]
+        else:
+            distributionParams = distribution_params['meff']['diameterParams']
+    else:
+        distributionParams = None
+
+    return meffProb * prob(d,'meff',distributionParams)
 
 def UaffProb(d, uaffProb):
 

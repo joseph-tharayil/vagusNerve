@@ -51,7 +51,6 @@ def loadTitrationFactors(stimulusDirectory,variance=0):
 
     titrationFactorsMeff += np.random.normal(0,variance*titrationFactorsMeff.astype(float))
 
-
     return titrationFactorsMeff
 
 def removeDuplicates(midptsX):

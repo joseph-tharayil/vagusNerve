@@ -21,13 +21,14 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, variance=0):
 
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes)
 
-    numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes)
+    np.save(r'D:\vagusOptimization\optimizeFractions_sweep\groundTruth\fiberProbs_'+str(fascIdx)+'.npy',[maffProb,meffProb])
+
+    numFibersPerFascicle = getFibersPerFascicle(fascIdx,fascTypes,distribution_params)
 
 
 ##### Weight is given by the product of the recruitment curve and the diameter probability curve
-    phiWeight[0][0] =  MaffProb(d,maffProb)  * recruitment * numFibersPerFascicle
-    phiWeight[0][1] =  MeffProb(d,meffProb)  * recruitment * numFibersPerFascicle
-
+    phiWeight[0][0] =  MaffProb(d,maffProb,distribution_params,fascIdx)  * recruitment * numFibersPerFascicle
+    phiWeight[0][1] =  MeffProb(d,meffProb,distribution_params,fascIdx)  * recruitment * numFibersPerFascicle
 
 
     return phiWeight, recruitment

@@ -11,6 +11,7 @@ from vagusNerve.utils import *
 from vagusNerve.nerveSetup import *
 from vagusNerve.phiShape import *
 
+import time as tm
 
 def loadActionPotentialShapes():
 
@@ -39,10 +40,10 @@ def convolveToGetSignal(time, current, phi, recordingCurrent, variance=np.array(
 
     Vs = getVs(aps,time) # Interpolates action potential shape in time
 
-    signals = []
-
     V = Vs[0]
 
+
+    signals = []
 
     der = np.diff(V,n=2)/((time[1]-time[0])**2) # Second derivative of action potential shape
 
@@ -80,18 +81,17 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
     '''
 
     scaling0 = Scaling(d,0)* (time[1]-time[0])/velocityList[0]
-    scaling1 = Scaling(d,1)* (time[1]-time[0])/velocityList[1]
 
-    return scaling0, scaling1
+    return scaling0
 
 def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, variance=np.array([0])):
 
-    phiWeightMaff, phiWeightMeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, variance) # For each of the four fiber types, returns scaling factor for each diameter
+    phiWeightMaff, phiWeightMeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, distribution_params, variance) # For each of the four fiber types, returns scaling factor for each diameter
 
-    myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
+
+    myelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
     myelinatedCurrentScaling = myelinatedCurrentScaling.magnitude
-    unmyelinatedCurrentScaling = unmyelinatedCurrentScaling.magnitude
 
     phiWeightMaff = phiWeightMaff.magnitude
     phiWeightMeff = phiWeightMeff.magnitude
@@ -109,11 +109,13 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fas
 
     maffScaling, meffScaling = scalingFactorsByType
 
+
     phi0 = phiShapeMyelinated.T @ maffScaling
 
     phi1 = phiShapeMyelinated.T @ meffScaling
 
-    phi = phi0+phi1
+
+    phi = np.array(phi0+phi1)
 
     return phi
 
@@ -163,13 +165,14 @@ def getPhiCutoff(recordingDirectory):
 
 def runSim(fascIdx,stimulus=None,recording=None,numDiameters=2000):
 
-    distanceIdx = 0
+    t = tm.time()
 
     current = stimulus['current'] # Current applied in finite element simulation of recruitment
     stimulusDirectory = stimulus['stimulusDirectory'] # Location of titration outputs from S4:
 
     distance = getDistance(distanceIdx, recording)
 
+    
     time = getTime()
 
     recordingCurrent = recording['recordingCurrent']*pq.A # Current in the S4L recording simulation
@@ -186,16 +189,22 @@ def runSim(fascIdx,stimulus=None,recording=None,numDiameters=2000):
     if len(variance) > 1 and len(current)>1:
         raise AssertionError('Either variance or current must be constant')
 
-    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, variance)
 
+#    print("Prelims take " +str(tm.time()-t))
+ 
+    scalingFactorsByType = getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance)
+    
+#    print("Getting scaling factors in "+str(tm.time()-t))
 
     cutoff = getPhiCutoff(recording)
 
     phiShapesByType = getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cutoff)
 
+#    print('PhiShapes in '+str(tm.time()-t))
     phi = getExposureFunctions(phiShapesByType, scalingFactorsByType, distanceIdx, fascIdx)
 
+#    print("Exposure functions in "+str(tm.time()-t))
 
     signals = convolveToGetSignal(time, current, phi, recordingCurrent, variance)
-
+#    print("Convolution in "+str(tm.time()-t))
     return signals
