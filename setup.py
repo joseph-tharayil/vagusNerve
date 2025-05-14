@@ -21,7 +21,6 @@ setup(
     'quantities',
     'openpyxl',
     'pytest',
-    'pytest-cov',
-    'quantities'
+    'pytest-cov'
     ]
    )

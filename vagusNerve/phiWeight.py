@@ -8,7 +8,7 @@ import quantities as pq
 from vagusNerve.nerveSetup import *
 from vagusNerve.recruitment import *
 
-def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_params, variance=0):
+def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, variance=0):
 
     '''
     For a given current level, for each fiber type calculates the scaling factor for each diameter, based on recruitment, fiber diameter distribution, and number of fibers
@@ -19,7 +19,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     recruitment = Recruitment(current,d,fascIdx,stimulusDirectory, variance)
 
-    maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes, distribution_params)
+    maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes)
 
     np.save(r'D:\vagusOptimization\optimizeFractions_sweep\groundTruth\fiberProbs_'+str(fascIdx)+'.npy',[maffProb,meffProb])
 
@@ -33,7 +33,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     return phiWeight, recruitment
 
-def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, distribution_params, variance=np.array([0])):
+def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, variance=np.array([0])):
 
     '''
     Iterates through current levels and, for each fiber type, returns scaling factor given by product of recruitment, fiber diameter distribution, and number of fibers
@@ -46,7 +46,7 @@ def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, distribution_p
 
         for v in variance:
 
-            p, rec = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory, distribution_params, v)
+            p, rec = PhiWeight(d,c,fascIdx,fascTypes,stimulusDirectory, v)
 
             phiWeight.append(p)
             recruitment.append(rec)
