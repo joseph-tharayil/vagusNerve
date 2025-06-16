@@ -1,5 +1,8 @@
 .DS_Store
 build/
+**/*.gz
+**/*.png
+data/
 .ipynb_checkpoints/
 __pycache__/
 **/*.pyc
