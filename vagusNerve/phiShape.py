@@ -108,7 +108,7 @@ def editPhiShape(phi,distance,cutoff=1e-4,isMonopolar=False):
 
     xPos = phi.iloc[:,0]*pq.m
     
-    xvals = xPos+distance -xPos[np.argmax(phi.iloc[:,1].values)] # Shift to match desired distance
+    xvals = xPos+distance -79.9e-3 # Shift to match desired distance
 
     phiShapeEmpirical = (phi.iloc[:,1].values-np.mean(phi.iloc[:,1]))
 
