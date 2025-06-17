@@ -1,27 +1,11 @@
-Metadata-Version: 2.2
+Metadata-Version: 2.1
 Name: vagusNerve
 Version: 0.1
 Summary: Semi-analytic model of the evoked compound action potential
 Home-page: https://github.com/tharayil/vagusNerve
 Author: Blue Brain Project, EPFL
 License: GPL-3.0
-License-File: license.txt
-License-File: authors.txt
-Requires-Dist: scikit-learn
-Requires-Dist: scipy
-Requires-Dist: numpy
-Requires-Dist: pandas
-Requires-Dist: notebook
-Requires-Dist: ipython
-Requires-Dist: matplotlib
-Requires-Dist: ipympl
-Requires-Dist: quantities
-Requires-Dist: openpyxl
-Requires-Dist: pytest
-Requires-Dist: pytest-cov
-Requires-Dist: quantities
-Dynamic: author
-Dynamic: home-page
-Dynamic: license
-Dynamic: requires-dist
-Dynamic: summary
+Platform: UNKNOWN
+
+UNKNOWN
+
