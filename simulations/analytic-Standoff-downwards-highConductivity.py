@@ -2,32 +2,38 @@
 
 import numpy as np
 import pandas as pd
-
-
+import multiprocessing as mp
+from functools import partial
 import sys
 
 from vagusNerve.runSim import runSim
 
-def main(outputfolder, distanceIdx):
+def runSim_wrapper(fascIdx, stim, rec):
+    params = {'maff':{'diameterParams':None, 'fiberTypeFractions':None},'meff':{'diameterParams':None, 'fiberTypeFractions':None}}
+    return runSim(0, stim, rec, fascIdx,params, 2000)  # Pass correct arguments
+
+def main(outputfolder):
 
     stimulus = {'current':np.array([100,200,300,400,500])*10/173,
                 'stimulusDirectory':{
-                    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationBetterConductivity_Standoff_HighConductivity.xlsx',
-                    "unmyelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/Titration_BetterSundt_HighConductivity.xlsx'
+                    "myelinated":r'D:/vagusNerve/FullPipeline/titrationTestVertical.xlsx'
                 }
                }
 
     recording = {'recordingCurrent':509e-6,
-                 'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Bipolar_Corrected/'
+                 'recordingDirectory':r'C:/Users/tharayil/Desktop/SimResults/'
             }
 
-    runSim(outputfolder, distanceIdx, stimulus, recording)
+    numcores = mp.cpu_count()
+    with mp.Pool(numcores-4) as p:
+        signals = p.starmap(runSim_wrapper, [(i, stimulus, recording) for i in np.arange(39)])
+
+    np.save(outputfolder+'/results.npy',signals)
 
 
 if __name__=="__main__":
     
     
-    outputfolder = sys.argv[1]
-    distanceIdx = int(sys.argv[2])
+    outputfolder = 'downwardsElectrode/'
     
-    main(outputfolder,distanceIdx)
+    main(outputfolder)
