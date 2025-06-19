@@ -5,6 +5,7 @@ build/
 data/
 .ipynb_checkpoints/
 __pycache__/
+**/*.npy
 **/*.pyc
 **/*.out
 **/*.log
