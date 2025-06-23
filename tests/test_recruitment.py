@@ -7,8 +7,8 @@ import quantities as pq
 def test_loadTitrationFactors():
 
     stimulusDirectory = {
-    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_HighConductivity.xlsx',
-    "unmyelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_Unmyelinated_HighConductivity.xlsx'
+    "myelinated":'../../data/TitrationGoodConductivity_Standoff_Sideways_HighConductivity.xlsx',
+    "unmyelinated":'../../data/TitrationGoodConductivity_Standoff_Sideways_Unmyelinated_HighConductivity.xlsx'
 }
 
     m, u = loadTitrationFactors(stimulusDirectory)

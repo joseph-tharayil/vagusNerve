@@ -39,7 +39,7 @@ def test_linearizeRightSide():
 def test_phiShape():
 
     recording = {'recordingCurrent':509e-6,
-                 'recordingDirectory':'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/PhiConductivity_Bipolar_Corrected/'
+                 'recordingDirectory':'../../data/PhiConductivity_Bipolar_Corrected/'
             }
 
     femDirectory = recording['recordingDirectory']
