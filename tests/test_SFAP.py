@@ -70,7 +70,7 @@ def test_SFAP():
 
     assert current.units == pq.A
 
-    phiFunc = FitPhiShape(0,distance,'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/FasciclePhiBigStandard/')
+    phiFunc = FitPhiShape(0,distance,'../../data/FasciclePhiBigStandard/')
 
     phiShape0 = PhiShape(velocityList,tphi,phiFunc)
 

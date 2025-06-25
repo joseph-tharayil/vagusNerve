@@ -31,8 +31,9 @@ def test_prob():
     '''
 
     d = getDiameters()
+    distributionParams = {'maff':{'diameterParams':None, 'fiberTypeFractions':None},'meff':{'diameterParams':None, 'fiberTypeFractions':None}}
     maffProb = 1
-    p = MaffProb(d,maffProb)
+    p = MaffProb(d,maffProb,distributionParams)
 
     assert len(p) == len(d)
 
@@ -57,7 +58,9 @@ def test_fiberTypeFractions():
     fascIdx = 0
     fascTypes = [1]
 
-    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx, fascTypes)
+    distributionParams = {'maff':{'diameterParams':None, 'fiberTypeFractions':None},'meff':{'diameterParams':None, 'fiberTypeFractions':None}}
+
+    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx, fascTypes,distributionParams)
 
     assert maffFrac < .2
     assert maffFrac > 0
@@ -71,7 +74,7 @@ def test_fiberTypeFractions():
 
     fascTypes = [0]
 
-    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx, fascTypes)
+    maffFrac, meffFrac, ueffFrac, uaffFrac = getFiberTypeFractions(fascIdx, fascTypes,distributionParams)
 
     assert maffFrac < .25
     assert maffFrac > .10
@@ -87,9 +90,11 @@ def test_fiberNumbers():
 
     fascTypes = getFascicleTypes()
 
+    distributionParams= {'maff':{'diameterParams':None, 'fiberTypeFractions':None},'meff':{'diameterParams':None, 'fiberTypeFractions':None}}
+
     numbers = []
     for i in range(39):
-        numbers.append(getFibersPerFascicle(i,fascTypes))
+        numbers.append(getFibersPerFascicle(i,fascTypes, distributionParams ))
 
     assert np.sum(numbers)>250000
     assert np.sum(numbers)<375000

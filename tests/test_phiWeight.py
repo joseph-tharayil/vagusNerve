@@ -14,12 +14,15 @@ def test_getPhiWeight():
     fascIdx = 0
     fascTypes = getFascicleTypes()
 
+    distributionParams = {'maff':{'diameterParams':None, 'fiberTypeFractions':None},'meff':{'diameterParams':None, 'fiberTypeFractions':None}}
+
+
     stimulusDirectory = {
-    "myelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_HighConductivity.xlsx',
-    "unmyelinated":'/gpfs/bbp.cscs.ch/project/proj85/scratch/vagusNerve/Data/TitrationGoodConductivity_Standoff_Sideways_Unmyelinated_HighConductivity.xlsx'
+    "myelinated":'../../data/TitrationGoodConductivity_Standoff_Sideways_HighConductivity.xlsx',
+    "unmyelinated":'../../data/TitrationGoodConductivity_Standoff_Sideways_Unmyelinated_HighConductivity.xlsx'
 }
 
-    phiWeight0, phiWeight1, phiWeight2, phiWeight3 = getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory)
+    phiWeight0, phiWeight1, phiWeight2, phiWeight3 = getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, distributionParams)
 
     np.testing.assert_array_equal(phiWeight0.shape,(len(current),len(d)))
     np.testing.assert_array_equal(phiWeight1.shape,(len(current),len(d)))
