@@ -25,7 +25,7 @@ def main(outputfolder):
             }
 
     numcores = mp.cpu_count()
-    with mp.Pool(numcores-18) as p:
+    with mp.Pool(18) as p:
         signals = p.starmap(runSim_wrapper, [(i, stimulus, recording,outputfolder) for i in np.arange(39)])
 
     np.save(outputfolder+'/results.npy',signals)

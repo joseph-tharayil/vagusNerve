@@ -34,7 +34,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     if outputfolder is not None:
         np.save(outputfolder+'/maffProb'+str(fascIdx)+'.npy',MaffProb(d,maffProb,distribution_params,fascIdx))
-        np.save(outputfolder + '/meffProb' + str(fascIdx) + '.npy', MeffProb(d, maffProb, distribution_params, fascIdx))
+        np.save(outputfolder + '/meffProb' + str(fascIdx) + '.npy', MeffProb(d, meffProb, distribution_params, fascIdx))
         np.save(outputfolder+'/numFibersPerFascicle'+str(fascIdx)+'.npy',numFibersPerFascicle)
 
     return phiWeight, recruitment

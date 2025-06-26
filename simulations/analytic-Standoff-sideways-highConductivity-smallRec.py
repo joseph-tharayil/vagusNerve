@@ -15,9 +15,9 @@ def runSim_wrapper(fascIdx, stim, rec):
 
 def main(outputfolder):
 
-    stimulus = {'current':np.array([500])/278,
+    stimulus = {'current':np.array([500])/420.9,
                 'stimulusDirectory': {
-                    "myelinated": '../../titrationTest.xlsx',
+                    "myelinated": '../../titrationTestHOrizontal.xlsx',
                 }
                 }
 
@@ -27,7 +27,7 @@ def main(outputfolder):
             }
 
     numcores = mp.cpu_count()
-    with mp.Pool(numcores - 18) as p:
+    with mp.Pool(12) as p:
         signals = p.starmap(runSim_wrapper, [(i, stimulus, recording) for i in np.arange(39)])
 
     np.save(outputfolder + '/results.npy', signals)

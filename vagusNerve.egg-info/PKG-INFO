@@ -5,6 +5,8 @@ Summary: Semi-analytic model of the evoked compound action potential
 Home-page: https://github.com/tharayil/vagusNerve
 Author: Blue Brain Project, EPFL
 License: GPL-3.0
+License-File: license.txt
+License-File: authors.txt
 Requires-Dist: scikit-learn
 Requires-Dist: scipy
 Requires-Dist: numpy
@@ -20,5 +22,6 @@ Requires-Dist: pytest-cov
 Dynamic: author
 Dynamic: home-page
 Dynamic: license
+Dynamic: license-file
 Dynamic: requires-dist
 Dynamic: summary
