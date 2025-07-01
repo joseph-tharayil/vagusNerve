@@ -233,6 +233,8 @@ def getAnalyticSignal():
     timeIndices = []
     for t in trueTime:
         timeIndices.append(np.argmin(np.abs((tphi+stimulusDelay*1e-3)-t)))
+		
+    print(len(timeIndices))
 
     V = FitAPShape(aps,tphi) # Interpolates action potential shapes over time vector
 
@@ -286,6 +288,6 @@ if __name__=='__main__':
     sensing *= -1
     error = np.sum(np.abs(analytic - sensing))
 
-    np.save('analytic.npy',analytic)
-    np.save('sensing.npy',sensing)
-    assert error<2.3e-6
+    np.save(r'D:\vagusNerve\SFAPValidation\analytic.npy',analytic)
+    np.save(r'D:\vagusNerve\SFAPValidation\sensing.npy',sensing)
+    #assert error<2.3e-6

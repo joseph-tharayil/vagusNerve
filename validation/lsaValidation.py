@@ -15,7 +15,7 @@ import s4l_v1.units as units
 from scipy.interpolate import interp1d
 from scipy.signal import fftconvolve, butter, sosfilt
 
-def getCurrents():
+def getCurrents(model='PointSource'):
 
     # Get the neuron simulation
     sim = s4l.document.AllSimulations['Nr']
@@ -50,6 +50,7 @@ def getCurrents():
         startlist.append(1e-6 * geo[key].Start)
         endlist.append(1e-6 * geo[key].End)
 
+
     # Defines the positions where the membrane current is calculated
     # in this case at the center of the section
     pos_node = []
@@ -62,8 +63,18 @@ def getCurrents():
                 pos_node.append(np.array(isens.Data.Grid.GetPoint(j)))
                 inde.append(j)
 
+    if model == 'LineSource':
+        startPositions = []
+        endPositions = []
+        for i in range(len(nodecenterlist)):
+            for j in range(isens.Data.Grid.NumberOfPoints):
+                d = (1e-3 * isens.Data.Grid.GetPoint(j) - startlist[i]).Length()
+                if d < 1e-8:
+                    startPositions.append(np.array(isens.Data.Grid.GetPoint(j)))
+                d = (1e-3 * isens.Data.Grid.GetPoint(j) - endlist[i]).Length()
+                if d < 1e-8:
+                    endPositions.append(np.array(isens.Data.Grid.GetPoint(j)))
     ict = []
-    print(inde)
     for i in range(isens.Data.NumberOfSnapshots):
         icurr = []
         ic = np.squeeze(isens.Data.Field(i))
@@ -73,12 +84,21 @@ def getCurrents():
     icurr_list.append(np.squeeze(np.array(ict)))
 
     currents = np.array(icurr_list)[0]
-    positions = np.array(pos_node)
+
+    if model == 'LineSource':
+        positions = np.array([startPositions,endPositions]).T
+    else:
+        positions = np.array(pos_node)
 
     nonEmpty = np.where(np.any(currents, axis=0))[0]
+	
+    print(positions.shape)
 
     currents = currents[:, nonEmpty]
-    positions = positions[nonEmpty]
+    if model == 'LineSource':
+        positions = positions[:,nonEmpty,:]
+    else:
+        positions = positions[nonEmpty]
 
     return positions, currents
 
@@ -88,6 +108,77 @@ def get_coeffs_pointSource(positions, electrodePos, sigma=1):
     coeffs = 1 / (4 * np.pi * sigma * distances)
 
     return coeffs
+
+def line_source_cases(hs,r2s,ls):
+
+    linesourceTerms = []
+    for i in range(len(hs)):
+        h = hs[i]
+        r2 = r2s[i]
+        l = ls[i]
+
+        if h < 0 and l < 0:
+
+            lineSourceTerm = np.log(((h**2+r2)**.5-h)/((l**2+r2)**.5-l))
+
+        elif h < 0 and l > 0:
+
+            lineSourceTerm = np.log( ( ((h**2+r2)**.5-h)* (l + (l**2+r2)**.5 ) ) / r2  )
+
+        elif h > 0 and l > 0:
+
+            lineSourceTerm = np.log( ( (l + (l**2+r2)**.5 ) ) / ( (r2+h**2)**.5 + h)  )
+        linesourceTerms.append(lineSourceTerm)
+
+    return np.array(linesourceTerms)
+
+def get_line_coeffs(startPos,endPos,electrodePos,sigma=1):
+
+    '''
+    startPos and endPos are the starting and ending positions of the segment
+    sigma is the extracellular conductivity
+    '''
+
+    ### Convert from um to m
+    startPos = startPos# * 1e-6
+    endPos = endPos# * 1e-6
+    electrodePos = electrodePos# * 1e-6
+    ###
+
+    segLength = np.linalg.norm(startPos-endPos)
+
+    x1 = electrodePos[0]-endPos[0]
+    y1 = electrodePos[1]-endPos[1]
+    z1 = electrodePos[2]-endPos[2]
+
+    print(x1)
+    print(y1)
+    print(z1)
+
+
+    xdiff = endPos[0]-startPos[0]
+    ydiff = endPos[1]-startPos[1]
+    zdiff = endPos[2]-startPos[2]
+
+
+    h = 1/segLength * (x1*xdiff + y1*ydiff + z1*zdiff)
+
+    l = h + segLength
+
+    subtractionTerm = h**2
+
+    r2 = (electrodePos[0]-endPos[0])**2 + (electrodePos[1]-endPos[1])**2 + (electrodePos[2]-endPos[2])**2 - subtractionTerm
+
+    r2 = np.abs(r2)
+
+
+    lineSourceTerm = line_source_cases(h,r2,l)
+
+    segCoeff = 1/(4*np.pi*sigma*segLength)*lineSourceTerm
+
+    #segCoeff *= 1e-9 # Convert from nA to A
+
+    return segCoeff
 
 def getElectrodePositions(electrodeName):
 
@@ -110,8 +201,37 @@ def get_pointSource_signal(electrode, referenceElectrode):
     coeffsRef = get_coeffs_pointSource(nodePos, refPos)
 
     signal = np.matmul(currents, coeffsRec) - np.matmul(currents, coeffsRef)
-	
+
     print(np.where(signal<-1e-15))
+
+    return signal
+
+
+def get_pointSource_signal(electrode, referenceElectrode):
+
+    ePos = getElectrodePositions(electrode)
+    refPos = getElectrodePositions(referenceElectrode)
+
+    nodePos, currents = getCurrents()
+
+    coeffsRec = get_coeffs_pointSource(nodePos, ePos)
+    coeffsRef = get_coeffs_pointSource(nodePos, refPos)
+
+    signal = np.matmul(currents, coeffsRec) - np.matmul(currents, coeffsRef)
+
+    return signal
+
+def get_lineSource_signal(electrode, referenceElectrode):
+
+    ePos = getElectrodePositions(electrode)
+    refPos = getElectrodePositions(referenceElectrode)
+
+    nodePos, currents = getCurrents(model='LineSource')
+
+    coeffsRec = get_line_coeffs(nodePos[:,:,0],nodePos[:,:,1], ePos)
+    coeffsRef = get_line_coeffs(nodePos[:,:,0],nodePos[:,:,1], refPos)
+
+    signal = np.matmul(currents, coeffsRec) - np.matmul(currents, coeffsRef)
 
     return signal
 
@@ -164,7 +284,7 @@ def getVelocities(diameter):
     #v0 = 50e-6/(1.9e-3-1.78e-3)
 
     d0 = 4e-6
-    v0 = 18.65
+    v0 = 18.655
     velocity = v0 * diameter / d0
 
     return velocity
@@ -262,14 +382,14 @@ def ExtractPhiShape():
     points = np.array([sensor.Data.Grid.GetPoint(i)[1] for i in range(sensor.Data.Grid.NumberOfPoints)])
     sensor.Update()
     intpot = np.real(sensor.Data.Field(0))
-	
+
     return np.hstack((points[:, np.newaxis], intpot))
 
 def getAnalyticSignal():
 
     fiberDiameter = 4e-6
-    distance = 0#11*fiberDiameter*100
-    stimulusDelay = 0#0.295e-3
+    distance = 3e-6+3*400e-6#11*fiberDiameter*100
+    stimulusDelay = 1.1e-4
     currentApplied = getFlux()
 
     aps = loadActionPotentialShapes()
@@ -278,11 +398,11 @@ def getAnalyticSignal():
 
     timeIndices = []
     for t in trueTime:
-	    timeIndices.append(np.argmin(np.abs((tphi+stimulusDelay) - t)))
+        timeIndices.append(np.argmin(np.abs((tphi+stimulusDelay) - t)))
 
     V = FitAPShape(aps, tphi)
     np.save(r'D:\vagusNerve\SFAPValidation\ap.npy',V)
-	
+
     v = getVelocities(fiberDiameter)
 
     der = np.diff(V, n=2) / ((tphi[1] - tphi[0])**2)
@@ -290,13 +410,13 @@ def getAnalyticSignal():
     phi = PhiShape(v, tphi, phiFunc)
     np.save(r'D:\vagusNerve\SFAPValidation\phi.npy',phi)
 
-    cv = fftconvolve(der * Scaling(fiberDiameter) * (tphi[1] - tphi[0]) / v, phi, mode='same')
+    cv = np.convolve(der * Scaling(fiberDiameter) * (tphi[1] - tphi[0]) / v, phi, mode='same')
     sfap = cv / currentApplied
 
     return sfap[timeIndices[:-1]]
 
-pointSourceOutput = get_pointSource_signal('Sphere 1', 'Sphere 2')
+lineSourceOutput = get_pointSource_signal('Sphere 1', 'Sphere 2')
 analytic = getAnalyticSignal()
 
 np.save(r'D:\vagusNerve\SFAPValidation\analytic.npy',analytic)
-np.save(r'D:\vagusNerve\SFAPValidation\pointSource.npy',pointSourceOutput)
+np.save(r'D:\vagusNerve\SFAPValidation\pointSource.npy',lineSourceOutput)
