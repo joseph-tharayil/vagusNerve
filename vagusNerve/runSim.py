@@ -130,8 +130,8 @@ def getExposureFunctions(phiShapesByType, scalingFactorsByType):
     phi = np.array(phi0+phi1)
 
     if uaffScaling is not None:
-        phi2 = phiShapeMyelinated.T @ uaffScaling
-        phi3 = phiShapeMyelinated.T @ ueffScaling
+        phi2 = phiShapeUnmyelinated.T @ uaffScaling
+        phi3 = phiShapeUnmyelinated.T @ ueffScaling
 
         phi += phi2+phi3
 
@@ -144,7 +144,9 @@ def getPhiShapes(fascIdx, distance, recordingDirectory, velocityList, time, cuto
     ### For each diameter, defines a shifted and scaled exposure function
     phiShapeMyelinated = PhiShape(velocityList[0],time,phiFunc)
 
-    return phiShapeMyelinated
+    phiShapeUnmyelinated = PhiShape(velocityList[1], time, phiFunc)
+
+    return phiShapeMyelinated, phiShapeUnmyelinated
 
 def getDistance(distanceIdx, recording):
 
@@ -191,14 +193,14 @@ def testDistributionParams(distribution_params,stimulus):
         raise AssertionError('distribution_params must contain both maff and meff')
     if 'uaff' in keys or 'ueff' in keys:
         if 'uaff' in keys and 'ueff' in keys:
-            if 'unmyelinated' in stimulus.keys():
+            if 'unmyelinated' in stimulus['stimulusDirectory'].keys():
                 pass
             else:
                 raise AssertionError('stimulus directory must contain titration for unmyelinated fibers')
         else:
             raise AssertionError('If unmyelinated fibers are used, distribution_params must contain both uaff and ueff')
     else:
-        if 'unmyelinated' in stimulus.keys():
+        if 'unmyelinated' in stimulus['stimulusDirectory'].keys():
             raise AssertionError("Titration file for unmyelinated fibers should not be included if distributions are not included")
 
 def runSim(fascIdx,stimulus=None,recording=None,distribution_params=None,numDiameters=2000,outputfolder=None):

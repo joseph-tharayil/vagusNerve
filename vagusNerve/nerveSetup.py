@@ -267,17 +267,35 @@ def MeffProb(d, meffProb,distribution_params,fascIdx=None):
 
     return meffProb * prob(d,'meff',distributionParams)
 
-def UaffProb(d, uaffProb):
+def UaffProb(d, uaffProb,distribution_params,fascIdx=None):
 
-    uaffvals = np.loadtxt('../../data/uaffvals.csv',delimiter=',')
+    if distribution_params['uaff'] is not None:
+        if distribution_params['uaff']['diameterParams'] is not None:
+            if fascIdx is not None and len(distribution_params['uaff']['diameterParams'])>1:
+                distributionParams = distribution_params['uaff']['diameterParams'][fascIdx]
+            else:
+                distributionParams = distribution_params['uaff']['diameterParams']
+        else:
+            distributionParams = None
+    else:
+        distributionParams = None
 
-    return uaffProb * prob(d,'uaff')
+    return uaffProb * prob(d,'uaff',distributionParams)
 
-def UeffProb(d, ueffProb):
+def UeffProb(d, ueffProb,distribution_params,fascIdx=None):
 
-    ueffvals = np.loadtxt('../../data/ueffvals.csv',delimiter=',')
+    if distribution_params['ueff'] is not None:
+        if distribution_params['ueff']['diameterParams'] is not None:
+            if fascIdx is not None and len(distribution_params['ueff']['diameterParams'])>1:
+                distributionParams = distribution_params['ueff']['diameterParams'][fascIdx]
+            else:
+                distributionParams = distribution_params['ueff']['diameterParams']
+        else:
+            distributionParams = None
+    else:
+        distributionParams = None
 
-    return ueffProb * prob(d,'ueff')
+    return ueffProb * prob(d,'ueff',distributionParams)
 
 def getFasciclePositions():
 
