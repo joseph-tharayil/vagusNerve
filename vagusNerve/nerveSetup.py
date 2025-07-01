@@ -191,7 +191,13 @@ def getFiberTypeFractions(fascIdx, fascTypes,distribution_params):
     else:
         meffFrac = distribution_params['meff']['fiberTypeFractions'][fascIdx] * 0.01
 
-    ueffFrac = sampleFractionHistogram(ueffColorX,ueffColorY,ueffColors,side,rng)
+    if 'ueff' in distribution_params.keys():
+        if distribution_params['ueff']['fiberTypeFractions'] is not None:
+            ueffFrac = distribution_params['ueff']['fiberTypeFractions'][fascIdx] * 0.01
+        else:
+            ueffFrac = sampleFractionHistogram(ueffColorX, ueffColorY, ueffColors, side, rng)
+    else:
+        ueffFrac = sampleFractionHistogram(ueffColorX,ueffColorY,ueffColors,side,rng)
 
     uaffFrac = 1-(maffFrac+meffFrac+ueffFrac)
 

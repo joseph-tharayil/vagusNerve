@@ -17,7 +17,7 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 
     phiWeight = [ [[],[]], [[],[]] ]
 
-    recruitment = Recruitment(current,d,fascIdx,stimulusDirectory, variance)
+    recruitment, unmyelinatedRecruitment = Recruitment(current,d,fascIdx,stimulusDirectory, variance)
 
     maffProb, meffProb, ueffProb, uaffProb = getFiberTypeFractions(fascIdx, fascTypes,distribution_params)
 
@@ -31,6 +31,10 @@ def PhiWeight(d, current,fascIdx, fascTypes,stimulusDirectory, distribution_para
 ##### Weight is given by the product of the recruitment curve and the diameter probability curve
     phiWeight[0][0] =  MaffProb(d,maffProb,distribution_params,fascIdx)  * recruitment * numFibersPerFascicle
     phiWeight[0][1] =  MeffProb(d,meffProb,distribution_params,fascIdx)  * recruitment * numFibersPerFascicle
+
+    if 'uaff' in distribution_params.keys():
+        phiWeight[1][0] = UaffProb(d, uaffProb, distribution_params, fascIdx) * unmyelinatedRecruitment * numFibersPerFascicle
+        phiWeight[1][1] = UeffProb(d, ueffProb, distribution_params, fascIdx) * unmyelinatedRecruitment * numFibersPerFascicle
 
     if outputfolder is not None:
         np.save(outputfolder+'/maffProb'+str(fascIdx)+'.npy',MaffProb(d,maffProb,distribution_params,fascIdx))
@@ -57,8 +61,6 @@ def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, distribution_p
             phiWeight.append(p)
             recruitment.append(rec)
 
-
-
     phiWeight0 = phiWeight[0][0][0][np.newaxis]
     phiWeight1 = phiWeight[0][0][1][np.newaxis]
 
@@ -70,4 +72,17 @@ def getPhiWeight(d, current,fascIdx,fascTypes, stimulusDirectory, distribution_p
     if outputfolder is not None:
         np.save(outputfolder+'/recruitment_'+str(fascIdx)+'.npy',recruitment)
 
-    return phiWeight0, phiWeight1
+    if 'uaff' in distribution_params.keys():
+
+        phiWeight2 = phiWeight[0][1][0][np.newaxis]
+        phiWeight3 = phiWeight[0][1][1][np.newaxis]
+
+        for i in np.arange(1, len(phiWeight)):
+            phiWeight2 = np.vstack((phiWeight2, phiWeight[i][1][0][np.newaxis]))
+            phiWeight3 = np.vstack((phiWeight3, phiWeight[i][1][1][np.newaxis]))
+
+    else:
+        phiWeight2 = None
+        phiWeight3 = None
+
+    return phiWeight0, phiWeight1, phiWeight2, phiWeight3

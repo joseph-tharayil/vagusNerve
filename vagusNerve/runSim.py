@@ -80,21 +80,22 @@ def getDiameterScalingOfCurrent(d, time, velocityList):
     '''
 
     scaling0 = Scaling(d,0)* (time[1]-time[0])/velocityList[0]
+    scaling1 = Scaling(d, 1) * (time[1] - time[0]) / velocityList[1]
 
-    return scaling0
+    return scaling0, scaling1
 
 def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, velocityList, distribution_params, variance=np.array([0]), outputfolder=None):
 
-    phiWeightMaff, phiWeightMeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, distribution_params, variance,outputfolder) # For each of the four fiber types, returns scaling factor for each diameter
+    phiWeightMaff, phiWeightMeff, phiWeightUaff, phiWeightUeff = getPhiWeight(d,current,fascIdx, fascTypes, stimulusDirectory, distribution_params, variance,outputfolder) # For each of the four fiber types, returns scaling factor for each diameter
 
 
-    myelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
+    myelinatedCurrentScaling, unmyelinatedCurrentScaling = getDiameterScalingOfCurrent(d, time, velocityList)
 
     myelinatedCurrentScaling = myelinatedCurrentScaling.magnitude
+    unmyelinatedCurrentScaling = unmyelinatedCurrentScaling.magnitude
 
     phiWeightMaff = phiWeightMaff.magnitude
     phiWeightMeff = phiWeightMeff.magnitude
-
 
     maffscaling = phiWeightMaff.T * myelinatedCurrentScaling[:,np.newaxis]
     meffscaling = phiWeightMeff.T * myelinatedCurrentScaling[:,np.newaxis]
@@ -104,20 +105,35 @@ def getScalingFactors(d,current,fascIdx, fascTypes, stimulusDirectory, time, vel
             np.save(outputfolder+'/currentScaling.npy',myelinatedCurrentScaling)
         np.save(outputfolder+'/maffScaling_'+str(fascIdx)+'.npy',maffscaling)
 
-    return [maffscaling, meffscaling]
+    if 'uaff' in distribution_params.keys():
+        phiWeightUaff = phiWeightUaff.magnitude
+        phiWeightUeff = phiWeightUeff.magnitude
+
+        uaffscaling = phiWeightUaff.T * unmyelinatedCurrentScaling[:, np.newaxis]
+        ueffscaling = phiWeightUeff.T * unmyelinatedCurrentScaling[:, np.newaxis]
+    else:
+        uaffscaling = None
+        ueffscaling = None
+
+    return [maffscaling, meffscaling,uaffscaling, ueffscaling]
 
 def getExposureFunctions(phiShapesByType, scalingFactorsByType):
 
-    phiShapeMyelinated = phiShapesByType
+    phiShapeMyelinated, phiShapeUnmyelinated = phiShapesByType
 
-    maffScaling, meffScaling = scalingFactorsByType
-
+    maffScaling, meffScaling, uaffScaling, ueffScaling = scalingFactorsByType
 
     phi0 = phiShapeMyelinated.T @ maffScaling
 
     phi1 = phiShapeMyelinated.T @ meffScaling
 
     phi = np.array(phi0+phi1)
+
+    if uaffScaling is not None:
+        phi2 = phiShapeMyelinated.T @ uaffScaling
+        phi3 = phiShapeMyelinated.T @ ueffScaling
+
+        phi += phi2+phi3
 
     return phi, phi0, phi1
 
@@ -165,7 +181,29 @@ def getPhiCutoff(recordingDirectory):
 
     return cutoff
 
+def testDistributionParams(distribution_params,stimulus):
+
+    keys = distribution_params.keys()
+
+    if 'maff' in keys and 'meff' in keys:
+        pass
+    else:
+        raise AssertionError('distribution_params must contain both maff and meff')
+    if 'uaff' in keys or 'ueff' in keys:
+        if 'uaff' in keys and 'ueff' in keys:
+            if 'unmyelinated' in stimulus.keys():
+                pass
+            else:
+                raise AssertionError('stimulus directory must contain titration for unmyelinated fibers')
+        else:
+            raise AssertionError('If unmyelinated fibers are used, distribution_params must contain both uaff and ueff')
+    else:
+        if 'unmyelinated' in stimulus.keys():
+            raise AssertionError("Titration file for unmyelinated fibers should not be included if distributions are not included")
+
 def runSim(fascIdx,stimulus=None,recording=None,distribution_params=None,numDiameters=2000,outputfolder=None):
+
+    testDistributionParams(distribution_params,stimulus)
 
     t = tm.time()
 
