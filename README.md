@@ -1,6 +1,6 @@
 # Simulation Insights on the Compound Action Potential
 
-This repository provides the code necessary to replicate the results of the paper Simulation Insights on the Compound Action Potential. 
+This repository provides the code necessary to replicate the results of the paper [Simulation Insights on the Compound Action Potential](https://www.biorxiv.org/content/10.1101/2024.10.16.618681v1.full). 
 
 In broad terms, the workflow of the paper is as follows: 
 
@@ -13,12 +13,7 @@ The potential field produced by the recording electrodes is interpolated along t
 # Instructions
 
 ## System requirements
-
-Our documentation and examples assume that you are running the semi-analytic models on a Linux system with slurm. The code to generate finite element models assumes that you are using the Sim4Life finite element platform (which is only compatible with Windows). This code has not been tested on any other system.
-
-## Dependencies
-
-The code for the semi-analytic models depends on MPI. The bash scripts provided in the *simulations* repository assumes that a module called *hpe-mpi* is available in an archive called *unstable*. This code also depends on several other python packages, which are automatically installed with setuptools when the package is installed.
+The code to generate semi-analytic models has been confirmed to work on both Linux and Windows, with Python 3.13. It should also work on MacOS, and with other versions of python. The code to generate finite element models assumes that you are using the Sim4Life finite element platform (which is only compatible with Windows). This code has not been tested on any other system.
 
 ## Installation
 To install the code to run the semi-analytic models, create a virtual environment by running `python -m venv vagusEnv`. Then, simply run `pip install . ` to install this code in a virtual environment.
