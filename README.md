@@ -18,6 +18,8 @@ The code to generate semi-analytic models has been confirmed to work on both Lin
 ## Installation
 To install the code to run the semi-analytic models, create a virtual environment by running `python -m venv vagusEnv`. Then, simply run `pip install . ` to install this code in a virtual environment.
 
+This code requires finite element models which are available on [Zenodo](https://zenodo.org/records/15848037) or [oSparc](https://osparc.io/#/study/e03935d2-79a5-11ef-8269-0242ac174ae0).
+
 To run the finite element models, see the relevant documentation.
 
 ## Testing
@@ -26,12 +28,12 @@ The code to run the semi-analytic models can be tested by running `pytest tests`
 ## Replicating results from the paper
 
 ### Create finite element models
-The finite element models used in this study can be created by extruding a 2D nerve histology cross-section (to which electrode geometries were manually added) along the longitudinal axis. Cross-sections are available on oSPARC for the model with the large recording electrode, with the small recording electrode on either the left or the right side, and for the horizontal and vertical stimulus electrode. They are in the form of iSeg project files; each cross-section consists of a .h5 file, a .prj file, and a .xmf file.
+The finite element models used in this study can be created by extruding a 2D nerve histology cross-section (to which electrode geometries were manually added) along the longitudinal axis. Cross-sections are available on oSPARC or Zenodo for the model with the large recording electrode, with the small recording electrode on either the left or the right side, and for the horizontal and vertical stimulus electrode. They are in the form of iSeg project files; each cross-section consists of a .h5 file, a .prj file, and a .xmf file.
 
 To create the nerve model, import these slices into the Sim4Life project files titles ExtrusionLines_*.smash (where * refers to each of the different models) and run the appropriate script in the create_fem_simulation/extrudeMesh folder to create the 2.5D model. Then run the scripts create_fem_simulation/createPerineuria/MakePatches.py and create_fem_simulation/createPerineuria/getFascicleDiameters.py (in that order) to create the thin layers for the electrode contacts and the perineuria. Note that these scripts will only produce the 2.5D mdoels used in teh EM simulations. For the neural simulations, you must use the provided FEM file, in which a region of the fascicles corresponding to the perinueria is segmented out. This ensures that the script which generates neurons does not place any within the perineuria.
 
 ###  Run finite element models
-Once the finite element models are created in the previous step, they must be set up to run EM simulations to calculate the stimulating E field or the recording exposure function. These simulations are also available on oSPARC, with separate Sim4Life project files for the two stimulus cases (vertical and horizontal electrodes), for recording with the small electrodes on the left and on the right, and for bipolar recordings with the full cuff 1 cm from the stimulus electrode. Monopolar recordings and bipolar recordings 6cm from the stimulus electrode are all in the same Sim4Life project file (all_other_recording.smash). Simply run the simulations and export the data files in the postprocessing tab.
+Once the finite element models are created in the previous step, they must be set up to run EM simulations to calculate the stimulating E field or the recording exposure function. These simulations are also available on oSPARC and Zenodo, with separate Sim4Life project files (Stimulus_Horizontal_v2.smash and Stimulus_Vertical.smash) for the two stimulus cases (vertical and horizontal electrodes), and for recording with the small electrodes on the left and on the right (SmallRecordingElectrode.smash and SmallRecordingElectorde_Otherside.smash). Monopolar recordings and bipolar recordings 6cm from the stimulus electrode are all in the same Sim4Life project file (all_other_recording.smash). Simply run the simulations and export the data files in the postprocessing tab.
 
 Alternatively, if you are setting up the simulations from scratch, perform the following steps to export the data:
 
@@ -50,6 +52,8 @@ Run all of the python scripts files in the *simulation* folder. Each corresponds
 ### Create plots
 Running all of the cells in the notebook provided will generate the majority of the figures in the paper. Note that you will need to change the hard-coded paths to match the location of the output folders on your system.
 The other figure panels are created in Sim4Life. To create these panels, open the Sim4Life finite element models for the stimulation EM simulations for the two different electrode orientiations, and run the corresponding scripts in the figure_panels_s4l folder. These will change the colors of the fascicles.
+
+To generate the plots in Figure 3 in our paper, see [here](https://github.com/joseph-tharayil/vagusNerve/tree/main/validation). To generate the plots in Figure 4, see [here](https://github.com/joseph-tharayil/vagusNerve/blob/main/notebooks/ReadMe.md). To generate the plots in Figure 12, see [this repo](github.com/joseph-tharayil/vagusOptimization).
 
 # Citation
 If you use this software, we kindly ask you to cite the following publication:
