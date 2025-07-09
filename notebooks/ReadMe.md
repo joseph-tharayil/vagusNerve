@@ -1,4 +1,4 @@
-This folder contains the notebooks used to generate the figures in our paper. Unless otherwise stated, all figures are generated in the notebook FiguresForPaper.i[ynb.
+This folder contains the notebooks used to generate the figures in our paper. Unless otherwise stated, all figures are generated in the notebook FiguresForPaper.ipynb.
 
 The notebook Clean.nb is a Mathematica notebook used for the analytical investigations in our paper.
 
