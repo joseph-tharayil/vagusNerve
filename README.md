@@ -57,7 +57,7 @@ To generate the plots in Figure 3 in our paper, see [here](https://github.com/jo
 
 # Citation
 If you use this software, we kindly ask you to cite the following publication:
-[Tharayil et al. Simulation Insights on the Compound Action Potential. *bioRxiv, (2024)*](https://www.biorxiv.org/content/10.1101/2024.10.16.618681v1.abstract)
+[Tharayil et al. Simulation Insights on the Compound Action Potential. *PLOS Computational Biology, (2025)*](https://doi.org/10.1371/journal.pcbi.1013452)
 
 # Acknowledgment
 The development of this software was supported by funding to the Blue Brain Project, a research center of the École polytechnique fédérale de Lausanne (EPFL), from the Swiss government's ETH Board of the Swiss Federal Institutes of Technology.
