@@ -44,7 +44,7 @@ For the EM simulations for stimulation, export the potential fields as a cache f
 ### Run neuronal titrations
 Sim4Life project files containing the neural titration are also available on oSPARC (`titration_vertical_Rat.smash`, `titration_horizontal_Rat.smash`, `titration_vertical_Sundt.smash`, `titration_horizontal_Sundt.smash`). Simply run the simulations and export the Titration Excel files in the postprocessing tab.
 
-Alternatively, if you wish to set up the simulation yourself, run the script `create_fem_simulation/createNeurons/FunctionalizeNeurons_Titrate_PerineuriaExcluded.py`. Then import the cache file from the previous step and run the titration.
+Alternatively, if you wish to set up the simulation yourself, run the script `create_fem_simulation/createNeurons/FunctionalizeNeurons_Titrate_PerineuriaExcluded.py` to populate the fascicles with nerve fibers. Then import the cache file containing the potential field from the previous step and run the titration.
 
 ### Run semi-analytic models
 Run all of the python scripts files in the *simulation* folder. Each corresponds to a semi-analytic simulation of the eCAP, under various stimulus and recording parameters. In these python scripts, `stimulation_directory` refers to the paths to the Excel files output from the titration step. `recording_directory` refers to the paths to the Excel files containing the exposure functions. Note that you will have to change the paths in the python scripts to match the location of the input and output folders on your system.
