@@ -37,7 +37,7 @@ Once the finite element models are created in the previous step, they must be se
 
 Alternatively, if you are setting up the simulations from scratch, perform the following steps to export the data:
 
-For the EM simulations for recording exposure, run the `scripts create_fem_simulation/extract_fem_results/create_splines_to_interpolate_over.py`, then `create_fem_simulation/extract_fem_results/InterpolatePhiFasc.py`. These will save the exposure function to xlsx files, which are used by the semi-analytic models
+For the EM simulations for recording exposure, run the scripts `create_fem_simulation/extract_fem_results/create_splines_to_interpolate_over.py`, then `create_fem_simulation/extract_fem_results/InterpolatePhiFasc.py`. These will save the exposure function to xlsx files, which are used by the semi-analytic models
 
 For the EM simulations for stimulation, export the potential fields as a cache file. These will be used by the titration simulations.
 
