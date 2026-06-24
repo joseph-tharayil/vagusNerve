@@ -8,7 +8,7 @@ First, finite element models of the vagus nerve are used, in Sim4Life, to calcul
 
 The stimulating E field is used to perform a neural titration, also in Sim4Life, for a sample of fibers of identical diameter. The results of this titration are used in the semi-analytic model to predict activation of the entire population of fibers in the vagus nerve. 
 
-The potential field produced by the recording electrodes is interpolated along the center of each fascicle, and used in the semi-analytic model to calculate the eCAP, according to the reciprocity theorem. 
+The potential field produced by the recording electrodes is interpolated along the center of each fascicle, and used, along with the transmembrane potential during an action potential (as calculated in a single fiber in Sim4Life), to calculate the eCAP in the semi-analytic model according to the reciprocity theorem. 
 
 # Instructions
 
@@ -47,6 +47,9 @@ Sim4Life project files containing the neural titration are also available on oSP
 Alternatively, if you wish to set up the simulation yourself, run the script `create_fem_simulation/createNeurons/FunctionalizeNeurons_Titrate_PerineuriaExcluded.py` to populate the fascicles with nerve fibers. Then import the cache file containing the potential field from the previous step and run the titration.
 
 ### Run semi-analytic models
+
+First, save the transmembrane voltage during an action potential, as calculated in the file `APShape_IClamp.smash`, available on Zenodo and oSparc. This is used along with the electric potential fields calculated above in the semi-analytic calculation of the eCAP.
+
 Run all of the python scripts files in the *simulation* folder. Each corresponds to a semi-analytic simulation of the eCAP, under various stimulus and recording parameters. In these python scripts, `stimulation_directory` refers to the paths to the Excel files output from the titration step. `recording_directory` refers to the paths to the Excel files containing the exposure functions. Note that you will have to change the paths in the python scripts to match the location of the input and output folders on your system.
 
 ### Create plots
